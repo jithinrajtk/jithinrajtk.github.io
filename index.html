@@ -4,6 +4,7 @@ title: Jithin Raaj
 ---
 
 <section class="home">
+
   <div class="home-intro">
     <div class="home-profile">
       <img src="/assets/images/profile.png" alt="Jithin Raaj" class="profile-photo" />
@@ -14,43 +15,42 @@ title: Jithin Raaj
     </div>
 
     <div class="home-bio">
-      <p>Engineer turned marketer who still codes.</p>
-      <p>I work at <a href="https://entri.app" target="_blank" rel="noopener">Entri</a>, a startup in Kerala. I head social media here. I've been around since 2017. Most of what I know, I learned on the job. How to build something that actually works, how to scale it, how to stay calm when things go off track. My work is a mix of thinking and doing. I just try to figure out what helps the business grow and keep doing that.</p>
-      <p>I still write code. Not to build big things, but to fix what's broken. If something keeps repeating or feels slow, I'd rather solve it than get used to it. Whether it's in my work or life, most problems are just messy systems waiting to be cleaned up. Coding helps me with that.</p>
-      <p>I'm from Kochi. I like music that stays with you, conversations that don't rush, and people who mean what they say.</p>
-      <p>Films have always been there in the background. Not loud, not obvious, but shaping how I see. Doesn't matter where they're from or what language they speak. If a film knows when to pause, when to hold a moment, I'm drawn to it. Some stories land without making noise. Those are the ones I carry with me.</p>
+      <p>Engineer turned marketer who still codes. I work at <a href="https://entri.app" target="_blank" rel="noopener">Entri</a>, a startup in Kerala. I head social media here. I've been around since 2017. <button class="more-btn" onclick="toggleMore(this)">more</button></p>
+      <div class="bio-more" hidden>
+        <p>Most of what I know, I learned on the job. How to build something that actually works, how to scale it, how to stay calm when things go off track. My work is a mix of thinking and doing. I just try to figure out what helps the business grow and keep doing that.</p>
+        <p>I still write code. Not to build big things, but to fix what's broken. If something keeps repeating or feels slow, I'd rather solve it than get used to it. Whether it's in my work or life, most problems are just messy systems waiting to be cleaned up. Coding helps me with that.</p>
+        <p>I'm from Kochi. I like music that stays with you, conversations that don't rush, and people who mean what they say.</p>
+        <p>Films have always been there in the background. Not loud, not obvious, but shaping how I see. Doesn't matter where they're from or what language they speak. If a film knows when to pause, when to hold a moment, I'm drawn to it. Some stories land without making noise. Those are the ones I carry with me.</p>
+      </div>
     </div>
   </div>
 
-  <div class="home-section">
-    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
-      <span class="home-section-label">Writing</span>
-      <a href="/writing/" class="home-section-more">All posts →</a>
-    </div>
-    <ul class="post-list">
-      {% for post in site.posts limit:5 %}
-      <li class="post-list-item">
-        <a href="{{ post.url | relative_url }}" class="post-list-title">{{ post.title }}</a>
-        <span class="post-list-date">{{ post.date | date: "%b %Y" }}</span>
-      </li>
-      {% endfor %}
-    </ul>
+  <div class="section-grid">
+    <a href="/projects/" class="section-card">
+      <strong>Projects</strong>
+      <p>Things I've built to solve problems I live with.</p>
+    </a>
+    <a href="/writing/" class="section-card">
+      <strong>Blog</strong>
+      <p>Writing about building, automating, and figuring things out.</p>
+    </a>
+    <a href="/books/" class="section-card">
+      <strong>Books</strong>
+      <p>What I've been reading lately.</p>
+    </a>
+    <a href="/movies/" class="section-card">
+      <strong>Movies</strong>
+      <p>Films that stayed with me.</p>
+    </a>
   </div>
 
-  <div class="home-section" id="projects">
-    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
-      <span class="home-section-label">Projects</span>
-    </div>
-    <div class="project-list">
-      {% for project in site.projects %}
-      <a href="{{ project.url | relative_url }}" class="project-card">
-        <div class="project-card-header">
-          <span class="project-card-title">{{ project.title }}</span>
-          {% if project.status %}<span class="tag tag--{{ project.status }}">{{ project.status }}</span>{% endif %}
-        </div>
-        <p class="project-card-desc">{{ project.description }}</p>
-      </a>
-      {% endfor %}
-    </div>
-  </div>
 </section>
+
+<script>
+function toggleMore(btn) {
+  var more = btn.closest('.home-bio').querySelector('.bio-more');
+  var visible = !more.hidden;
+  more.hidden = visible;
+  btn.textContent = visible ? 'more' : 'less';
+}
+</script>

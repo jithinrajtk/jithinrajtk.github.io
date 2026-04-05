@@ -184,7 +184,79 @@ img {
 }
 
 .home-intro {
-  margin-bottom: 64px;
+  margin-bottom: 48px;
+}
+
+/* More button */
+.more-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--text-faint);
+  padding: 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--border);
+}
+
+.more-btn:hover {
+  color: var(--text-muted);
+}
+
+.bio-more {
+  margin-top: 1em;
+}
+
+.bio-more p {
+  margin-bottom: 1em;
+}
+
+.bio-more p:last-child {
+  margin-bottom: 0;
+}
+
+/* Section grid */
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--border);
+  border-left: 1px solid var(--border);
+}
+
+.section-card {
+  display: block;
+  padding: 24px 28px;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.section-card:hover {
+  background: var(--bg-subtle);
+  text-decoration: none;
+}
+
+.section-card strong {
+  display: block;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.section-card p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .home-profile {
