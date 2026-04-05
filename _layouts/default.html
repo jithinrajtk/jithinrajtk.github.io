@@ -4,29 +4,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  {% assign page_title = page.title | default: 'Jithin Raaj' %}
+  {% assign site_name = 'Jithin Raaj' %}
+  {% assign default_description = 'Social Media Team Lead at Entri | Expert in Problem Solving, Marketing, Social Media, Coding, Automation & AI | Helping startups scale their social media presence' %}
+  {% assign page_description = page.description | default: page.subtitle | default: default_description %}
+  {% assign canonical_url = page.url | prepend: 'https://jithinraaj.in' | replace: '/index.html', '/' %}
+  {% if page.image %}{% assign og_image = page.image | prepend: 'https://jithinraaj.in' %}{% else %}{% assign og_image = 'https://jithinraaj.in/assets/images/profile.png' %}{% endif %}
+  {% assign og_type = 'website' %}
+  {% if page.layout == 'post' %}{% assign og_type = 'article' %}{% endif %}
+
   <!-- Primary Meta Tags -->
-  <title>{% if page.title and page.title != 'Jithin Raaj' %}{{ page.title }} — Jithin Raaj{% else %}Jithin Raaj - Social Media Team Lead & Automation Expert{% endif %}</title>
-  <meta name="title" content="Jithin Raaj - Social Media Team Lead & Automation Expert" />
-  <meta name="description" content="Social Media Team Lead at Entri | Expert in Problem Solving, Marketing, Social Media, Coding, Automation & AI | Helping startups scale their social media presence" />
+  <title>{% if page_title != 'Jithin Raaj' %}{{ page_title }} — {{ site_name }}{% else %}{{ site_name }} - Social Media Team Lead & Automation Expert{% endif %}</title>
+  <meta name="title" content="{% if page_title != 'Jithin Raaj' %}{{ page_title }} — {{ site_name }}{% else %}{{ site_name }} - Social Media Team Lead & Automation Expert{% endif %}" />
+  <meta name="description" content="{{ page_description }}" />
   <meta name="keywords" content="Jithin Raaj, Social Media Lead, Automation Expert, AI Solutions, Social Media Marketing, Problem Solving, Team Lead, Entri" />
   <meta name="author" content="Jithin Raaj" />
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://jithinraaj.in/" />
-  <meta property="og:title" content="Jithin Raaj - Social Media Team Lead & Automation Expert" />
-  <meta property="og:description" content="Social Media Team Lead at Entri | Expert in Problem Solving, Marketing, Social Media, Coding, Automation & AI | Helping startups scale their social media presence" />
-  <meta property="og:image" content="https://jithinraaj.in/assets/images/profile.png" />
+  <meta property="og:type" content="{{ og_type }}" />
+  <meta property="og:url" content="{{ canonical_url }}" />
+  <meta property="og:title" content="{{ page_title }}" />
+  <meta property="og:description" content="{{ page_description }}" />
+  <meta property="og:image" content="{{ og_image }}" />
+  {% if page.layout == 'post' %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />{% endif %}
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://jithinraaj.in/" />
-  <meta property="twitter:title" content="Jithin Raaj - Social Media Team Lead & Automation Expert" />
-  <meta property="twitter:description" content="Social Media Team Lead at Entri | Expert in Problem Solving, Marketing, Social Media, Coding, Automation & AI | Helping startups scale their social media presence" />
-  <meta property="twitter:image" content="https://jithinraaj.in/assets/images/profile.png" />
+  <meta property="twitter:url" content="{{ canonical_url }}" />
+  <meta property="twitter:title" content="{{ page_title }}" />
+  <meta property="twitter:description" content="{{ page_description }}" />
+  <meta property="twitter:image" content="{{ og_image }}" />
 
   <!-- Canonical -->
-  <link rel="canonical" href="https://jithinraaj.in/" />
+  <link rel="canonical" href="{{ canonical_url }}" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/assets/images/profile.png" />
@@ -41,6 +51,28 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 
   <!-- Structured Data -->
+  {% if page.layout == 'post' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ page.title | jsonify }},
+    "description": {{ page_description | jsonify }},
+    "url": "{{ canonical_url }}",
+    "datePublished": "{{ page.date | date_to_xmlschema }}",
+    "author": {
+      "@type": "Person",
+      "name": "Jithin Raaj",
+      "url": "https://jithinraaj.in"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Jithin Raaj",
+      "url": "https://jithinraaj.in"
+    }
+  }
+  </script>
+  {% else %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -61,6 +93,7 @@
     ]
   }
   </script>
+  {% endif %}
 
   {% feed_meta %}
 </head>
