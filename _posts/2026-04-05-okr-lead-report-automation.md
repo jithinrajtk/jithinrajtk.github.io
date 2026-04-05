@@ -9,11 +9,11 @@ description: "Every morning meeting on lead generation started with someone open
 
 Picture the scene.
 
-Seven people in a meeting. Someone is sharing their screen — the performance dashboard on one side, a Google Sheet on the other. Someone else is typing numbers into a calculator. A third person is scrolling to find which category belongs to which POC.
+Seven people in a meeting. Someone is sharing their screen — the performance dashboard on one side, a Google Sheet on the other. Someone else is copying numbers into ChatGPT to get the calculations faster. A third person is scrolling to find which category belongs to which POC.
 
 Everyone is waiting. Nobody is deciding.
 
-This was the first six minutes of every lead generation review. Not strategy. Not action. Just people in a room doing math that a spreadsheet should have already done.
+This was the first six minutes of every lead generation review. Not strategy. Not action. Just people in a room — some using spreadsheets, some using AI — all doing the same math that should have already been done before anyone walked in.
 
 The answers always came. But they always came late.
 
