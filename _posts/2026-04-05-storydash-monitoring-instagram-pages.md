@@ -17,11 +17,11 @@ That's not monitoring. That's just time disappearing.
 
 ---
 
-## The gap nobody was tracking
+## The problem I didn't know I had
 
-Managing Instagram at scale has a problem that doesn't show up in any report: it's not *whether* you post stories. It's *when*.
+When you're managing 25+ pages, there's an issue that doesn't show up anywhere: it's not *whether* you post stories. It's *when*.
 
-Stories posted too close together don't get distributed the way you'd expect. The algorithm sees a burst, not a cadence. Reach drops. Views thin out. At 25+ pages, you can't track spacing manually — so it just keeps happening.
+Stories posted too close together don't get distributed the way you'd expect. The algorithm sees a burst, not a cadence. Reach drops. Views thin out. And because you can't manually track gaps across that many pages, it just keeps happening quietly.
 
 We were posting stories two minutes apart on some pages. Sometimes one minute. We had no idea.
 
@@ -29,33 +29,33 @@ We were posting stories two minutes apart on some pages. Sometimes one minute. W
 
 ## So I built StoryDash
 
-An internal dashboard. One screen. Every page, every story posted today, when each page was last active — and whether the spacing between stories is within the safe window.
+An internal dashboard. One screen. Every page, every story posted today, when each was last active — and whether the spacing is within the safe window.
 
 ![StoryDash overview — all pages, story counts, and status at a glance](/assets/images/storydash-overview.png)
 
-37 pages. 96 stories posted today. 21 pages active. Which pages have nothing posted and which are violating spacing rules — visible without opening Instagram once.
+37 pages. 96 stories today. 21 pages active. The ones with nothing posted and the ones breaking spacing rules — right there, without opening Instagram once.
 
 ---
 
 ## The violations view
 
-When I added the spacing check, I expected two or three pages with issues.
+When I added the spacing check, I expected maybe two or three pages with issues.
 
 ![Story spacing violations — pages with consecutive stories posted too close together](/assets/images/storydash-violations.png)
 
-Multiple pages had consecutive stories posted less than a minute apart. Some critical. This was happening silently, every day, across pages with thousands of followers.
+It was more than that. Multiple pages posting consecutive stories less than a minute apart. Some flagged critical. This had been happening every single day and we'd never caught it.
 
-We had zero visibility into it. Now we do.
+I showed this to the team. Nobody spoke for a second.
 
 ---
 
 ## Drill into any page
 
-Click a page, see the full story timeline: thumbnails, timestamps, gap warnings.
+Click any page, see the full day: thumbnails, timestamps, exactly where the gaps are too short.
 
 ![Per-page detail view with story thumbnails and frequency warning](/assets/images/storydash-page-detail.png)
 
-Three pairs of stories posted under 30 minutes apart. Worst gap: 0 minutes. The dashboard flags the exact violation and the recommended minimum — so whoever manages that page knows exactly what to fix.
+Three pairs of stories posted under 30 minutes apart. Worst gap: 0 minutes. The dashboard shows the exact violation and the recommended minimum — so the person managing that page knows what to fix, not just that something's wrong.
 
 ---
 
@@ -77,6 +77,6 @@ The information arrives. No one has to open anything.
 
 Built with **Claude Code** — dashboard, spacing logic, automated emails, all of it.
 
-I run content operations, not an engineering team. No dev resources, no product backlog. A problem that was costing thirty minutes every morning and a system that stopped it.
+I manage content operations, not a dev team. No engineer involved, no ticket raised. Just a problem that was costing thirty minutes every morning, and a tool that stopped it.
 
 *Running in production.*
