@@ -204,11 +204,24 @@ img {
    =========================== */
 
 .home {
-  padding: 64px 0 80px;
+  padding: 28px 0 64px;
 }
 
 .home-intro {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
+}
+
+.home-bio {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  max-width: 540px;
+}
+
+.home-bio a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* More button */
