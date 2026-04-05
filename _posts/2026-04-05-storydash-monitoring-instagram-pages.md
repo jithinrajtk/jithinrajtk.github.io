@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "I Was \"Monitoring\" 25+ Instagram Pages. I Was Just Wasting Time."
-subtitle: "How I built an internal dashboard and automated email reports to manage Instagram story activity at scale — using Claude Code."
+subtitle: "How I built an Instagram story monitoring dashboard with spacing alerts and automated hourly email reports using Claude Code. No engineers involved."
 date: 2026-04-05
-tags: [building, automation, instagram]
-description: "How I built an internal dashboard and automated email reports to manage Instagram story activity at scale — using Claude Code."
+tags: [instagram, automation, claude-code, social-media, internal-tools, content-operations]
+description: "I managed 25+ Instagram pages manually every morning. I built an internal dashboard with story spacing alerts and hourly email reports using Claude Code. Here is how."
 ---
 
 Every morning, the routine was the same.
@@ -14,6 +14,8 @@ Open Instagram. Check page one. Stories posted? Good. Check page two. Stories? Y
 Twenty-five pages later, thirty minutes had passed. And I hadn't done anything useful. I'd just *confirmed* that things existed.
 
 That's not monitoring. That's just time disappearing.
+
+This post covers how to monitor Instagram story activity across 25+ pages without opening the app — including how to catch story spacing violations that quietly hurt reach, how to build an internal story dashboard, and how to set up automated hourly email reports. Built entirely with Claude Code by someone running content operations, not engineering.
 
 ---
 
@@ -29,19 +31,19 @@ We were posting stories two minutes apart on some pages. Sometimes one minute. W
 
 ## So I built StoryDash
 
-An internal dashboard. One screen. Every page, every story posted today, when each was last active — and whether the spacing is within the safe window.
+An internal dashboard. One screen. Every page, every story posted today, when each was last active, and whether the spacing is within the safe window.
 
-![StoryDash overview — all pages, story counts, and status at a glance](/assets/images/storydash-overview.png)
+![StoryDash overview, all pages, story counts, and status at a glance](/assets/images/storydash-overview.png)
 
-37 pages. 96 stories today. 21 pages active. The ones with nothing posted and the ones breaking spacing rules — right there, without opening Instagram once.
+37 pages. 96 stories today. 21 pages active. The ones with nothing posted and the ones breaking spacing rules, right there, without opening Instagram once.
 
 ---
 
-## The violations view
+## Catching story spacing violations
 
 When I added the spacing check, I expected maybe two or three pages with issues.
 
-![Story spacing violations — pages with consecutive stories posted too close together](/assets/images/storydash-violations.png)
+![Story spacing violations, pages with consecutive stories posted too close together](/assets/images/storydash-violations.png)
 
 It was more than that. Multiple pages posting consecutive stories less than a minute apart. Some flagged critical. This had been happening every single day and we'd never caught it.
 
@@ -55,7 +57,7 @@ Click any page, see the full day: thumbnails, timestamps, exactly where the gaps
 
 ![Per-page detail view with story thumbnails and frequency warning](/assets/images/storydash-page-detail.png)
 
-Three pairs of stories posted under 30 minutes apart. Worst gap: 0 minutes. The dashboard shows the exact violation and the recommended minimum — so the person managing that page knows what to fix, not just that something's wrong.
+Three pairs of stories posted under 30 minutes apart. Worst gap: 0 minutes. The dashboard shows the exact violation and the recommended minimum, so the person managing that page knows what to fix, not just that something's wrong.
 
 ---
 
@@ -65,18 +67,31 @@ The dashboard solved the need to check. But I wanted to remove the need to check
 
 Hourly automated email. Every hour: pages that posted, pages that haven't, which ones need attention.
 
-![Automated hourly email report — stories today, pages posted, pages with no stories](/assets/images/storydash-email-report-clean.png)
+![Automated hourly email report, stories today, pages posted, pages with no stories](/assets/images/storydash-email-report-clean.png)
 
-93 stories tracked. 23 pages posted. 8 with nothing yet — highlighted.
+93 stories tracked. 23 pages posted. 8 with nothing yet, highlighted.
 
 The information arrives. No one has to open anything.
 
 ---
 
-## How it was built
+## How I built it with Claude Code
 
-Built with **Claude Code** — dashboard, spacing logic, automated emails, all of it.
+Built with **Claude Code**: dashboard, spacing logic, automated emails, all of it.
 
 I manage content operations, not a dev team. No engineer involved, no ticket raised. Just a problem that was costing thirty minutes every morning, and a tool that stopped it.
 
 *Running in production.*
+
+---
+
+## Questions people ask about this
+
+**Does posting Instagram stories too close together hurt reach?**
+Yes. Stories posted within minutes of each other are treated as a burst by the algorithm, not a cadence. Reach and views thin out. A minimum gap of 30 to 60 minutes between stories is the recommended safe window for consistent distribution.
+
+**How do you monitor Instagram story activity across multiple pages without opening the app?**
+Build a dashboard that pulls story data and displays post times, gaps between stories, and pages with no activity in one view. Pair it with automated email reports so the information arrives on a schedule rather than requiring anyone to check manually.
+
+**Can you build internal social media tools without a developer?**
+Yes. Claude Code lets you go from a clear problem description to a working internal tool without engineering resources. StoryDash was built this way: dashboard, backend logic, and automated reports, by someone managing content operations.
