@@ -37,4 +37,4 @@ Manual data export → spreadsheet calculation → formatting → sending. A rep
 
 **Built with**
 
-Claude Code. The entire system — data pipeline, calculation logic, severity classification, projection model, and email formatting — built without an engineering ticket.
+Claude Code. I described the problem, worked through the logic, and kept iterating until it ran on its own. The gap between having an idea and having a working system has never been smaller — and I've learned to close it fast.
