@@ -182,20 +182,16 @@ img {
 }
 
 .home-hero {
-  margin-bottom: 36px;
+  margin-bottom: 16px;
 }
 
 .home-name {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.1;
-  color: var(--text);
-  margin-bottom: 8px;
+  display: none;
 }
 
 .home-role {
-  font-size: 0.875rem;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--text-muted);
 }
 
@@ -232,10 +228,10 @@ img {
 
 .home-photo {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;
   border-radius: 10px;
   object-fit: cover;
-  object-position: center 60%;
+  object-position: center 20%;
   display: block;
   margin-bottom: 24px;
   filter: grayscale(15%);
@@ -249,7 +245,7 @@ img {
 
 
 .home-bio {
-  font-size: 1rem;
+  font-size: 1.0625rem;
   line-height: 1.75;
   color: var(--text-muted);
   max-width: 540px;
