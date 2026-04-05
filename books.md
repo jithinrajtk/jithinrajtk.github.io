@@ -4,6 +4,4 @@ title: Books
 permalink: /books/
 ---
 
-Things I've been reading. Updated as I go.
-
-*Coming soon.*
+Reading is how I think slowly about fast things. Updated as I go.
