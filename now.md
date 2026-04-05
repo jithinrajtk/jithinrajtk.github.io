@@ -4,12 +4,32 @@ title: Now
 permalink: /now/
 ---
 
+<a href="/" class="back-link">← Home</a>
+
 *Updated April 2026 — Kochi, India*
 
-Running social media operations across 25+ Instagram pages at Entri. Most of the focus lately has been on building the visibility layer — dashboards, automated reports, monitoring tools. Things that remove the need to manually check anything.
+---
 
-Using Claude Code to build most of it. The gap between "this should exist" and "this exists" has gotten very small.
+## Work
 
-Recent: [StoryDash](/projects/storydash/) — Instagram story monitoring with automated hourly email reports to the team.
+Leading the Social Media team at [Entri](https://entri.app). Eight years building the operation from scratch — YouTube, Instagram, Facebook across five languages. Still finding things worth fixing.
 
-Reading. Watching Malayalam cinema. Figuring out what to build next.
+## Building
+
+Tools that replace hours of manual work with something that just runs. The pattern is always the same: spot the thing nobody should be doing by hand, build the thing that makes it invisible. Most recently: [StoryDash](/projects/storydash/) — real-time Instagram story monitoring for 25+ pages with automated hourly reports to the team. More coming.
+
+## Reading
+
+*യന്ത്രം* — മലയാറ്റൂർ രാമകൃഷ്ണൻ
+
+## Watching
+
+*Project Hail Mary* — stayed with me longer than expected.
+
+## Thinking about
+
+What it means to build things that work while you sleep. Not productivity in the hustle sense — more like: design the system once, set it in motion, and come back to results. The gap between idea and working tool has never been smaller. I want to close it further.
+
+---
+
+<a href="/" class="back-link">← Home</a>
