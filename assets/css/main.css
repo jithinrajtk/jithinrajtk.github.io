@@ -393,11 +393,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-meta {
   display: flex;
-  align-items: center;
-  gap: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
   font-size: 0.8125rem;
   color: var(--text-faint);
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .post-title {
@@ -416,16 +417,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .post-tags {
   display: flex;
-  gap: 6px;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
 }
 
 .tag {
   font-size: 0.75rem;
-  background: var(--tag-bg);
-  color: var(--tag-text);
-  padding: 2px 8px;
-  border-radius: 100px;
-  font-weight: 500;
+  color: var(--text-faint);
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.tag + .tag::before {
+  content: '·';
+  padding: 0 5px;
+  color: var(--border);
 }
 
 .tag--live { background: #d1fae5; color: #065f46; }
