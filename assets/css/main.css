@@ -555,9 +555,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-links a:hover { color: var(--text); }
 
+@keyframes vibe-gradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 .footer-copy {
   font-size: 0.8125rem;
-  color: var(--text-faint);
+  background: linear-gradient(90deg, #d97706, #f59e0b, #ea580c, #d97706);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: vibe-gradient 4s ease infinite;
 }
 
 /* ===========================
