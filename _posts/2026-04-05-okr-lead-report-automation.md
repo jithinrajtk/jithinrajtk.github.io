@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "We Were Making Decisions With Yesterday's Numbers"
+title: "Every Morning, the Report Already Knows What Needs Fixing"
 subtitle: "How I built an automated OKR lead report that replaced 45 minutes of manual calculation with an email that arrives before the first meeting of the day."
 date: 2026-04-05
 tags: [automation, okr, internal-tools, claude-code, data, social-media]
