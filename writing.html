@@ -1,12 +1,12 @@
 ---
 layout: default
 title: Writing
+permalink: /writing/
 ---
 
-<div class="writing-page">
-  <div class="page-heading">
+<div class="list-page">
+  <div class="list-heading">
     <h1>Writing</h1>
-    <p>Things I've built, learned, or thought about.</p>
   </div>
 
   {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
