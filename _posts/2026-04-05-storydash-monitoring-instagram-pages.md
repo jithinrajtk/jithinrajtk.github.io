@@ -17,82 +17,66 @@ That's not monitoring. That's just time disappearing.
 
 ---
 
-## The Real Problem Was Invisible
+## The gap nobody was tracking
 
-Here's the thing nobody talks about when you're managing Instagram at scale: **posting frequency matters more than posting count.**
+Managing Instagram at scale has a problem that doesn't show up in any report: it's not *whether* you post stories. It's *when*.
 
-It's not just *whether* you post stories. It's *when*. Stories posted too close together don't get distributed the way you'd expect. The algorithm sees a burst, not a cadence. Reach quietly drops. Views thin out. And nobody notices because at 25+ pages, you simply can't track the gaps manually.
+Stories posted too close together don't get distributed the way you'd expect. The algorithm sees a burst, not a cadence. Reach drops. Views thin out. At 25+ pages, you can't track spacing manually — so it just keeps happening.
 
 We were posting stories two minutes apart on some pages. Sometimes one minute. We had no idea.
 
 ---
 
-## So I Built Something
+## So I built StoryDash
 
-I built **StoryDash** — an internal dashboard that gives the whole picture in one screen.
-
-Every page. Every story. How many posted today, when they were last active, and crucially — **whether the spacing between stories is within the safe window**.
+An internal dashboard. One screen. Every page, every story posted today, when each page was last active — and whether the spacing between stories is within the safe window.
 
 ![StoryDash overview — all pages, story counts, and status at a glance](/assets/images/storydash-overview.png)
 
-The overview shows all 37 pages at once. 96 stories posted today. 21 pages active. The dashboard immediately surfaces which pages have no stories and which are violating spacing rules — without opening Instagram once.
+37 pages. 96 stories posted today. 21 pages active. Which pages have nothing posted and which are violating spacing rules — visible without opening Instagram once.
 
 ---
 
-## The Violations View
+## The violations view
 
-This was the part that surprised us most.
-
-When I added the spacing check, I expected maybe two or three pages with issues. The violations view told a different story.
+When I added the spacing check, I expected two or three pages with issues.
 
 ![Story spacing violations — pages with consecutive stories posted too close together](/assets/images/storydash-violations.png)
 
-Multiple pages had consecutive stories posted less than a minute apart. Some flagged as critical. This was happening silently, every day, across pages with thousands of followers — and we had zero visibility into it.
+Multiple pages had consecutive stories posted less than a minute apart. Some critical. This was happening silently, every day, across pages with thousands of followers.
+
+We had zero visibility into it. Now we do.
 
 ---
 
-## Drill Into Any Page
+## Drill into any page
 
-Clicking into a page shows the full story timeline for the day: thumbnails, timestamps, and a clear warning if the gap between stories is too short.
+Click a page, see the full story timeline: thumbnails, timestamps, gap warnings.
 
 ![Per-page detail view with story thumbnails and frequency warning](/assets/images/storydash-page-detail.png)
 
-Here, the page had posted three pairs of stories with under 30 minutes between them. Worst gap: 0 minutes. The dashboard flags the exact violation and the recommended minimum (1 hour between stories) so whoever manages that page knows exactly what to fix.
+Three pairs of stories posted under 30 minutes apart. Worst gap: 0 minutes. The dashboard flags the exact violation and the recommended minimum — so whoever manages that page knows exactly what to fix.
 
 ---
 
-## The Email That Arrives Without Anyone Asking
+## The email that arrives without anyone asking
 
-The dashboard solved the "need to check" problem. But I wanted to remove the need to check the dashboard too.
+The dashboard solved the need to check. But I wanted to remove the need to check the dashboard too.
 
-So I added an hourly automated email. Every hour, the team gets a clean report: how many pages posted, how many haven't, and which ones need attention.
+Hourly automated email. Every hour: pages that posted, pages that haven't, which ones need attention.
 
 ![Automated hourly email report — stories today, pages posted, pages with no stories](/assets/images/storydash-email-report-clean.png)
 
-93 stories tracked. 23 pages posted today. 8 pages with nothing yet — highlighted so they can't be missed.
+93 stories tracked. 23 pages posted. 8 with nothing yet — highlighted.
 
-The information just arrives. No one has to open anything.
-
----
-
-## How I Built It
-
-All of this was built using **Claude Code**.
-
-I'm not a full-time developer. I manage content operations. But I had a clear problem, knew what the output should look like, and used Claude Code to go from idea to working internal tool — dashboard, spacing logic, automated emails, all of it.
-
-We're in an era where you don't have to wait for a product team to solve your operational problem. If you can describe the problem clearly, you can build the solution.
+The information arrives. No one has to open anything.
 
 ---
 
-## The Best Problems to Solve
+## How it was built
 
-The best problems to solve are the ones you live with every day. Not abstract ones. Not theoretical ones. The ones where you catch yourself doing the same pointless manual task and think, *this shouldn't require a human.*
+Built with **Claude Code** — dashboard, spacing logic, automated emails, all of it.
 
-This was one of them.
+I run content operations, not an engineering team. No dev resources, no product backlog. A problem that was costing thirty minutes every morning and a system that stopped it.
 
-If you're managing multiple social accounts and still checking things page by page — there's a better way. Build it. The tools exist. The bar is lower than you think.
-
----
-
-*Built with Claude Code. Running in production.*
+*Running in production.*
