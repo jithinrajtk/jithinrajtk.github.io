@@ -11,7 +11,10 @@ title: Jithin Raaj
   </div>
 
   <div class="home-intro">
-    <img src="/assets/images/profile.png" alt="Jithin Raaj" class="home-photo" />
+    <div class="home-photo-wrap">
+      <img src="/assets/images/profile.png" alt="Jithin Raaj" class="home-photo home-photo-color" />
+      <img src="/assets/images/profile.png" alt="" aria-hidden="true" class="home-photo home-photo-bw" />
+    </div>
     <div class="home-bio">
       <p>Head of Social at <a href="https://entri.app" target="_blank" rel="noopener">Entri</a>. Eight years building the social operation from scratch. Treats repeated manual work as a bug. Then fixes it.</p>
     </div>
@@ -47,36 +50,25 @@ title: Jithin Raaj
 
 <script>
 window.addEventListener('load', function () {
-  var photo = document.querySelector('.home-photo');
-  if (!photo || typeof gsap === 'undefined') return;
+  var wrap = document.querySelector('.home-photo-wrap');
+  var bw   = document.querySelector('.home-photo-bw');
+  if (!wrap || !bw) return;
 
-  gsap.fromTo(photo,
-    { y: 32, opacity: 0, filter: 'blur(6px)' },
-    { y: 0, opacity: 1, filter: 'blur(0px)', duration: 1.1, ease: 'power3.out', delay: 0.1 }
-  );
+  if (typeof gsap !== 'undefined') {
+    gsap.fromTo(wrap,
+      { y: 32, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1.1, ease: 'power3.out', delay: 0.1 }
+    );
+  }
 
-  photo.addEventListener('mousemove', function (e) {
-    var r = photo.getBoundingClientRect();
-    var cx = r.left + r.width  / 2;
-    var cy = r.top  + r.height / 2;
-    var dx = (e.clientX - cx) / (r.width  / 2);
-    var dy = (e.clientY - cy) / (r.height / 2);
-    gsap.to(photo, {
-      rotateY:  dx * 6,
-      rotateX: -dy * 4,
-      scale: 1.02,
-      duration: 0.5,
-      ease: 'power2.out',
-      transformPerspective: 800,
-      transformOrigin: 'center center'
-    });
+  wrap.addEventListener('mousemove', function (e) {
+    var rect = wrap.getBoundingClientRect();
+    var x = ((e.clientX - rect.left) / rect.width) * 100;
+    bw.style.clipPath = 'inset(0 0 0 ' + x + '%)';
   });
 
-  photo.addEventListener('mouseleave', function () {
-    gsap.to(photo, {
-      rotateY: 0, rotateX: 0, scale: 1,
-      duration: 0.8, ease: 'elastic.out(1, 0.5)'
-    });
+  wrap.addEventListener('mouseleave', function () {
+    bw.style.clipPath = 'inset(0 0 0 0%)';
   });
 });
 </script>
