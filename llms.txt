@@ -1,0 +1,25 @@
+# Jithin Raaj
+
+> Social Media Team Lead and automation builder. I write about operational problems I solve at work — internal tools, reporting systems, and automation built without engineering teams.
+
+## About
+
+Jithin Raaj is a Social Media Team Lead at Entri, based in India. He builds internal tools and automation systems to solve operational problems in social media and lead generation. He writes about the process — what the problem was, how he thought about it, and what he built.
+
+## Writing
+
+- /writing/ — All posts. Covers automation, internal tooling, OKR reporting, Claude Code, and social media operations.
+
+## Key topics
+
+- Automation built without engineering teams
+- Internal reporting tools (OKR tracking, lead performance)
+- Social media operations at scale
+- Building with Claude Code and AI tools
+- Operational problem-solving
+
+## Contact
+
+- Email: jithinrajtk@gmail.com
+- LinkedIn: https://linkedin.com/in/jithinrajtk
+- GitHub: https://github.com/jithinrajtk
