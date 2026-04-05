@@ -232,7 +232,7 @@ img {
   max-height: 420px;
   border-radius: 10px;
   object-fit: cover;
-  object-position: center 40%;
+  object-position: center 55%;
   display: block;
   margin-bottom: 24px;
   filter: grayscale(15%);
