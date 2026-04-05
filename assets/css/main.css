@@ -561,13 +561,43 @@ h1, h2, h3, h4, h5, h6 {
   100% { background-position: 0% 50%; }
 }
 
+@keyframes vibe-spin {
+  to { transform: rotate(360deg); }
+}
+
+.vibe-star {
+  width: 13px;
+  height: 13px;
+  flex-shrink: 0;
+  animation: vibe-spin 10s linear infinite;
+}
+
 .footer-copy {
   font-size: 0.8125rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.footer-copy span {
   background: linear-gradient(90deg, #d97706, #f59e0b, #ea580c, #d97706);
   background-size: 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: vibe-gradient 4s ease infinite;
+  position: relative;
+}
+
+.footer-copy span::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, #d97706, #f59e0b, #ea580c, #d97706);
+  background-size: 300%;
   animation: vibe-gradient 4s ease infinite;
 }
 
