@@ -3,8 +3,8 @@ layout: post
 title: "Every Morning, the Report Already Knows What Needs Fixing"
 subtitle: "How I built an automated lead performance report that replaced manual pre-meeting calculation with an email that arrives before anyone opens a laptop."
 date: 2026-04-05
-tags: [automation, okr, internal-tools, claude-code, data, social-media]
-description: "Every morning meeting on lead generation started with someone opening a dashboard and a spreadsheet to manually calculate where we stood. I built a system that does it automatically and delivers the answer before anyone opens a laptop."
+tags: [automation, okr, internal-tools, claude-code, data, social-media, lead-generation, reporting-automation, daily-report, performance-tracking]
+description: "How to automate a daily lead generation performance report — pulling OKR data, calculating run rates, ranking categories by urgency, and delivering a briefing email before the first meeting. Built without a data or engineering team."
 ---
 
 Picture the scene.
@@ -110,3 +110,15 @@ The system maps every category to its owner. When something is flagged, the name
 
 **Can you build internal reporting tools without a data or engineering team?**
 Yes — if you can clearly describe what you want the output to look like and what logic should drive it. The hard part was never writing the code. It was thinking through the rules: what counts as "behind", how to calculate a projection, what order things should surface in. Once that thinking is done, the rest follows.
+
+**How do you automate a daily performance report for a sales or lead generation team?**
+Define the output first: what does the team need to know, in what order, before the first meeting of the day. Then build logic that pulls data, calculates each category's position against its expected daily run rate, ranks by gap, and sends the result on a schedule. The key is making the report arrive before anyone needs to ask for it — not on demand, but automatic.
+
+**What is a lead run rate and how do you calculate it?**
+Run rate is how many leads a category needs to generate per day to hit its monthly target. If the monthly target is 300 and the month has 30 days, the daily run rate is 10. On Day 15, the expected total is 150. If the category has only reached 100, it's at 67% of expected pace — behind. Projecting forward: at 100 leads in 15 days, it will finish at 200 out of 300 — 67% of target. That projected finish number is what makes teams act.
+
+**How do you replace manual pre-meeting calculations with automation?**
+Identify what someone is calculating manually before each meeting. Write down the exact logic — what data they pull, what formula they apply, what order they present it in. Then build a script that does the same calculation on a schedule and delivers the output before the meeting starts. The goal isn't a better dashboard. It's removing the human step between data existing and the team being ready to use it.
+
+**What should a daily OKR status email include?**
+The most useful format: overall status at a glance (how many categories are on track vs behind), then a ranked list of categories that need attention — sorted by urgency, not alphabetically. Each entry should show the category name, the owner, the current achievement percentage, and the projected month-end finish if nothing changes. That last number — the projection — is what drives decisions. Everything else is context.
