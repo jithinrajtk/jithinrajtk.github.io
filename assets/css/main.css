@@ -229,25 +229,28 @@ img {
 .home-photo-wrap {
   position: relative;
   width: 100%;
-  aspect-ratio: 3 / 4;
-  max-height: 420px;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 24px;
   cursor: default;
 }
 
-.home-photo {
-  position: absolute;
-  inset: 0;
+.home-photo-color {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 3 / 4;
+  max-height: 420px;
   object-fit: cover;
   object-position: center 70%;
   display: block;
 }
 
 .home-photo-bw {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 70%;
   filter: grayscale(100%);
   clip-path: inset(0 0 0 0%);
   transition: clip-path 0.06s linear;
