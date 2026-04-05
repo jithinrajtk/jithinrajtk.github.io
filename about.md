@@ -4,32 +4,16 @@ title: About
 permalink: /about/
 ---
 
-I'm Jithin Raaj — Social Media Team Lead and Automation Expert at [Entri](https://entri.app), an edtech startup based in Kochi, India, where I've worked since 2017.
+Jithin Raaj is a growth marketer and builder based in Kochi, Kerala.
 
-My job sits at the intersection of marketing and engineering. I run social media operations across 25+ Instagram pages while building the internal tools that make that kind of scale manageable.
+He is Head of Social Media at [Entri](https://entri.app), one of India's leading regional-language edtech platforms. Over eight years, he grew the social operation from scratch — building a 42-person team, expanding across YouTube, Instagram, and Facebook in 5 languages, and reaching 19M+ followers. He joined as employee #14.
 
-The way I think about it: most operational problems are just repeated manual tasks that nobody's gotten around to automating yet. When I find one I live with every day, I build the solution.
+Along the way, he started building the tools to manage it. Real-time dashboards tracking 100+ handles. Automated monitoring systems that surface problems before they affect results. Self-running reports that go out every morning without anyone touching them. The line between growth and engineering stopped meaning much.
 
----
+He has a B.Tech in Computer Science from CUSAT and approaches most problems the same way — understand it properly, then fix it in a way that doesn't need fixing again.
 
-**What I'm working on lately**
-
-Mostly internal tooling — dashboards, automated reports, content monitoring systems. Things that remove the need for a human to check something manually and replace it with information that just arrives.
-
-The most recent example is [StoryDash](/projects/storydash/), a monitoring dashboard for Instagram story activity across all our pages, with automated hourly email reports for the team.
+Films are a serious interest, not a casual one. So is anything at the intersection of technology and how people actually live.
 
 ---
 
-**Outside of work**
-
-Cinema. I watch a lot of films and think about how stories are structured.
-
-I'm based in Kochi, Kerala — one of the better cities in India to live and work from.
-
----
-
-**Get in touch**
-
-Email is the best way: [hello@jithinraaj.in](mailto:hello@jithinraaj.in)
-
-I'm also on [LinkedIn](https://linkedin.com/in/jithinraaj) and [GitHub](https://github.com/jithinraaj).
+[hello@jithinraaj.in](mailto:hello@jithinraaj.in) · [LinkedIn](https://linkedin.com/in/jithinraaj) · [GitHub](https://github.com/jithinrajtk)
