@@ -5,29 +5,41 @@ title: Jithin Raaj
 
 <section class="home">
 
+  <div class="home-hero">
+    <h1 class="home-name">Jithin Raaj</h1>
+    <p class="home-role">Head of Social · Builder · Automation by instinct</p>
+  </div>
+
   <div class="home-intro">
     <img src="/assets/images/profile.png" alt="Jithin Raaj" class="home-photo" />
     <div class="home-bio">
-      <p>Growth marketer who codes. Head of Social at <a href="https://entri.app" target="_blank" rel="noopener">Entri</a>. Treats repeated manual work as a bug. Then fixes it. Books and films on the side.</p>
+      <p>Head of Social at <a href="https://entri.app" target="_blank" rel="noopener">Entri</a>. Eight years building the social operation from scratch. Treats repeated manual work as a bug. Then fixes it.</p>
     </div>
   </div>
+
+  {% if site.posts.size > 0 %}
+  <div class="home-recent">
+    <p class="home-section-label">Recent writing</p>
+    <ul class="post-list">
+      {% for post in site.posts limit:3 %}
+      <li class="post-list-item">
+        <a href="{{ post.url | relative_url }}" class="post-list-title">{{ post.title }}</a>
+        <span class="post-list-date">{{ post.date | date: "%b %-d" }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+    <a href="/writing/" class="home-all-posts">All writing →</a>
+  </div>
+  {% endif %}
 
   <div class="section-grid">
     <a href="/projects/" class="section-card">
       <strong>Projects</strong>
       <p>Things I've built to solve problems I live with.</p>
     </a>
-    <a href="/writing/" class="section-card">
-      <strong>Blog</strong>
-      <p>When something's worth writing down, it ends up here.</p>
-    </a>
-    <a href="/books/" class="section-card">
-      <strong>Books</strong>
-      <p>Reading is how I think slowly about fast things.</p>
-    </a>
-    <a href="/movies/" class="section-card">
-      <strong>Movies</strong>
-      <p>Films that stayed with me.</p>
+    <a href="/now/" class="section-card">
+      <strong>Now</strong>
+      <p>What I'm focused on at the moment.</p>
     </a>
   </div>
 
@@ -38,13 +50,11 @@ window.addEventListener('load', function () {
   var photo = document.querySelector('.home-photo');
   if (!photo || typeof gsap === 'undefined') return;
 
-  /* Reveal on load — slides up, fades in */
   gsap.fromTo(photo,
     { y: 32, opacity: 0, filter: 'blur(6px)' },
     { y: 0, opacity: 1, filter: 'blur(0px)', duration: 1.1, ease: 'power3.out', delay: 0.1 }
   );
 
-  /* Tilt on mouse move */
   photo.addEventListener('mousemove', function (e) {
     var r = photo.getBoundingClientRect();
     var cx = r.left + r.width  / 2;
