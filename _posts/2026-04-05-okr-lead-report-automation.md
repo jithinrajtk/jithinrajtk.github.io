@@ -39,7 +39,7 @@ That person's job in that moment isn't strategy. It's data retrieval.
 
 Data retrieval is a computer's job.
 
-We had 22 active lead categories. Multiple POCs. Different monthly targets for each. A daily run rate that shifts based on how many working days are left. The calculation is doable — but doing it manually every morning, before a meeting, under time pressure, is a design failure dressed up as a routine.
+Say you have 25 active lead categories. Each with a different owner, a different monthly target, a daily run rate that shifts as the month progresses. Now someone has to walk into a meeting and have all of that calculated, current, and ready to present. Every single morning. The calculation is doable — but doing it manually, before a meeting, under time pressure, is a design failure dressed up as a routine.
 
 I started thinking about what the meeting would look like if everyone already knew the numbers before they walked in.
 
