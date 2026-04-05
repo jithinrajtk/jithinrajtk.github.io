@@ -10,6 +10,8 @@ Managing 25+ Instagram pages means checking a lot of things manually — unless 
 
 StoryDash is an internal dashboard that shows, in one screen: every page, every story posted today, view counts, and whether story spacing is within the safe window for algorithm distribution.
 
+![StoryDash — all pages, story counts, and status at a glance](/assets/images/storydash-overview.png)
+
 **The problem it solves**
 
 At scale, manually checking each Instagram page for story activity isn't monitoring — it's just time disappearing. More critically, stories posted too close together quietly kill reach. The algorithm doesn't distribute them the way you'd expect. Most teams never catch this because you simply can't track it at volume.
