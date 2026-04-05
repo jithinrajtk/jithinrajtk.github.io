@@ -96,17 +96,23 @@ img {
    =========================== */
 
 .site-header {
-  padding-top: 28px;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 100;
 }
 
-.site-header .container {
-  padding-bottom: 20px;
+.header-inner {
+  display: flex;
+  align-items: center;
+  height: 56px;
 }
 
 .header-identity {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   text-decoration: none;
 }
 
@@ -114,13 +120,9 @@ img {
   text-decoration: none;
 }
 
-.header-divider {
-  border-top: 1px solid var(--border);
-}
-
 .profile-photo {
-  width: 56px;
-  height: 56px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
