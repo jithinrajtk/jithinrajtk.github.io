@@ -6,6 +6,8 @@ built: 2026
 tools: [Claude Code]
 ---
 
+![OKR Lead Status Report — automated daily email header](/assets/images/okr-report-header.png)
+
 Every morning, someone used to download data from the dashboard, open a spreadsheet, calculate gaps, figure out who was behind, and send a summary to the team. It took time. It happened after a delay. And the decisions it enabled were already an hour old.
 
 That process is now fully automated.
