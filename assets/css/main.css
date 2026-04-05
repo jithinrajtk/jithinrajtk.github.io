@@ -388,7 +388,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post-header {
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 
 .post-meta {
@@ -471,8 +471,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   letter-spacing: -0.02em;
   line-height: 1.3;
-  margin-top: 2em;
-  margin-bottom: 0.6em;
+  margin-top: 1.75em;
+  margin-bottom: 0.5em;
+}
+
+.prose hr + h2,
+.prose hr + h3,
+.prose hr + h4 {
+  margin-top: 0.5em;
 }
 
 .prose h2 { font-size: 1.2rem; }
@@ -537,7 +543,7 @@ h1, h2, h3, h4, h5, h6 {
 .prose hr {
   border: none;
   border-top: 1px solid var(--border);
-  margin: 2em 0;
+  margin: 1.5em 0;
 }
 
 
