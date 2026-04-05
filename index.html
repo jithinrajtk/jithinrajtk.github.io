@@ -64,11 +64,14 @@ window.addEventListener('load', function () {
   wrap.addEventListener('mousemove', function (e) {
     var rect = wrap.getBoundingClientRect();
     var x = ((e.clientX - rect.left) / rect.width) * 100;
-    bw.style.clipPath = 'inset(0 0 0 ' + x + '%)';
+    var grad = 'linear-gradient(to right, transparent ' + x + '%, black ' + x + '%)';
+    bw.style.webkitMaskImage = grad;
+    bw.style.maskImage = grad;
   });
 
   wrap.addEventListener('mouseleave', function () {
-    bw.style.clipPath = 'inset(0 0 0 0%)';
+    bw.style.webkitMaskImage = '';
+    bw.style.maskImage = '';
   });
 });
 </script>
