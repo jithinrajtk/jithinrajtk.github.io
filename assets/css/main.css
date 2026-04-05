@@ -309,6 +309,12 @@ img {
   margin-bottom: 28px;
 }
 
+.list-meta {
+  font-size: 0.8125rem;
+  color: var(--text-faint);
+  margin-top: 4px;
+}
+
 .list-heading h1,
 .list-heading h1 * {
   font-size: 1.125rem;
