@@ -1,0 +1,26 @@
+---
+layout: default
+title: Writing
+---
+
+<div class="writing-page">
+  <div class="page-heading">
+    <h1>Writing</h1>
+    <p>Things I've built, learned, or thought about.</p>
+  </div>
+
+  {% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+  {% for year_group in posts_by_year %}
+  <div class="post-year-group">
+    <div class="post-year">{{ year_group.name }}</div>
+    <ul class="post-list">
+      {% for post in year_group.items %}
+      <li class="post-list-item">
+        <a href="{{ post.url | relative_url }}" class="post-list-title">{{ post.title }}</a>
+        <span class="post-list-date">{{ post.date | date: "%b %-d" }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>

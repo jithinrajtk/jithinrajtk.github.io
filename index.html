@@ -1,0 +1,58 @@
+---
+layout: default
+title: Jithin Raaj
+---
+
+<section class="home">
+  <div class="home-intro">
+    <h1 class="home-name">Jithin Raaj</h1>
+    <p class="home-bio">
+      Social Media Team Lead &amp; Automation Expert at <a href="https://entri.app" target="_blank" rel="noopener">Entri</a>.
+      I build internal tools to solve operational problems I live with every day.
+      Based in Kochi.
+    </p>
+  </div>
+
+  <div class="home-section">
+    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
+      <span class="home-section-label">Writing</span>
+      <a href="/writing/" class="home-section-more">All posts →</a>
+    </div>
+    <ul class="post-list">
+      {% for post in site.posts limit:5 %}
+      <li class="post-list-item">
+        <a href="{{ post.url | relative_url }}" class="post-list-title">{{ post.title }}</a>
+        <span class="post-list-date">{{ post.date | date: "%b %Y" }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="home-section" id="projects">
+    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
+      <span class="home-section-label">Projects</span>
+    </div>
+    <div class="project-list">
+      {% for project in site.projects %}
+      <a href="{{ project.url | relative_url }}" class="project-card">
+        <div class="project-card-header">
+          <span class="project-card-title">{{ project.title }}</span>
+          {% if project.status %}<span class="tag tag--{{ project.status }}">{{ project.status }}</span>{% endif %}
+        </div>
+        <p class="project-card-desc">{{ project.description }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="home-section">
+    <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
+      <span class="home-section-label">Now</span>
+      <a href="/now/" class="home-section-more">Full update →</a>
+    </div>
+    <div class="now-snippet">
+      <p>Managing social media operations across 25+ Instagram pages at Entri. Building internal tools to remove manual work from the team's daily routine.</p>
+      <p>Currently exploring what else can be automated — dashboards, reports, content tracking.</p>
+    </div>
+  </div>
+</section>

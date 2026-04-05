@@ -1,0 +1,41 @@
+title: Jithin Raaj
+tagline: Building things to solve problems.
+description: Social Media Team Lead & Automation Expert at Entri. I build tools to solve operational problems I live with every day.
+url: "https://jithinraaj.in"
+baseurl: ""
+
+author:
+  name: Jithin Raaj
+  email: hello@jithinraaj.in
+  linkedin: jithinraaj
+  github: jithinraaj
+
+permalink: /writing/:title/
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - "*.sh"
