@@ -252,26 +252,20 @@ img {
 }
 
 /* ===========================
-   Writing list
+   List pages (Writing, Projects, About, Now, Books, Movies)
    =========================== */
 
-.writing-page {
+.list-page {
   padding: 32px 0 64px;
 }
 
-.page-heading {
+.list-heading {
   margin-bottom: 28px;
 }
 
-.page-heading h1 {
+.list-heading h1 {
   font-size: 1.125rem;
   font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.page-heading p {
-  font-size: 0.9375rem;
-  color: var(--text-muted);
 }
 
 .post-list {
@@ -477,36 +471,11 @@ img {
   margin: 2em 0;
 }
 
-/* ===========================
-   Pages (About, Now, Books, Movies, Projects)
-   =========================== */
 
-.page {
-  padding: 32px 0 64px;
-}
-
-.page-header {
-  margin-bottom: 28px;
-}
-
-.page-title {
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin-bottom: 4px;
-}
-
-.page-description {
-  font-size: 0.9375rem;
-  color: var(--text-muted);
-}
-
-.page-content.prose {
-  max-width: 580px;
-}
-
-/* Projects */
-.projects-page {
-  padding: 32px 0 64px;
+/* Projects list */
+.project-list {
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card {
