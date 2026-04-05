@@ -49,17 +49,10 @@ title: Jithin Raaj
 </section>
 
 <script>
-window.addEventListener('load', function () {
+document.addEventListener('DOMContentLoaded', function () {
   var wrap = document.querySelector('.home-photo-wrap');
   var bw   = document.querySelector('.home-photo-bw');
   if (!wrap || !bw) return;
-
-  if (typeof gsap !== 'undefined') {
-    gsap.fromTo(wrap,
-      { y: 32, opacity: 0 },
-      { y: 0, opacity: 1, duration: 1.1, ease: 'power3.out', delay: 0.1 }
-    );
-  }
 
   wrap.addEventListener('mousemove', function (e) {
     var rect = wrap.getBoundingClientRect();
