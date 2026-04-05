@@ -57,6 +57,11 @@ Which categories are bleeding. Who owns them. How far behind. Where they finish 
 
 That's it. The whole idea. Completely obvious once you say it out loud. Completely missing from how we were actually operating.
 
+<figure>
+<img src="/assets/images/okr-email-header.png" alt="Automated lead status report — email header and status summary" />
+<figcaption>Numbers and figures shown are illustrative, for demonstration purposes only. Actual data is confidential.</figcaption>
+</figure>
+
 ---
 
 ## Building it
@@ -68,6 +73,16 @@ The logic isn't complicated once you write it down. Take the data. Calculate how
 What took time was getting the projections right. Not just "you're behind" — but "at this pace, you'll finish at 71% of target by month end." That number is what changes a conversation. It turns "we're a bit behind" into "we will miss by this much unless something changes today."
 
 That specificity is what makes people act. Vague warnings get noted. Precise consequences get addressed.
+
+<figure>
+<img src="/assets/images/okr-action-required.png" alt="Action required section — categories flagged by urgency, with projected month-end shortfall" />
+<figcaption>Numbers and figures shown are illustrative, for demonstration purposes only. Actual data is confidential.</figcaption>
+</figure>
+
+<figure>
+<img src="/assets/images/okr-categories-table.png" alt="Full category breakdown — all leads ranked by achievement percentage against expected pace" />
+<figcaption>Numbers and figures shown are illustrative, for demonstration purposes only. Actual data is confidential.</figcaption>
+</figure>
 
 ---
 
