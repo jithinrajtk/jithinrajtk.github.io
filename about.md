@@ -18,4 +18,4 @@ Still figuring out what all of this adds up to. But the direction feels right.
 
 ---
 
-[hello@jithinraaj.in](mailto:hello@jithinraaj.in) · [LinkedIn](https://linkedin.com/in/jithinraaj) · [GitHub](https://github.com/jithinrajtk)
+[jithinrajtk@gmail.com](mailto:jithinrajtk@gmail.com) · [LinkedIn](https://linkedin.com/in/jithinrajtk) · [GitHub](https://github.com/jithinrajtk)
