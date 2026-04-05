@@ -7,13 +7,15 @@ tags: [automation, okr, internal-tools, claude-code, data, social-media]
 description: "Every morning meeting on lead generation started with someone opening a dashboard and a spreadsheet to manually calculate where we stood. I built a system that does it automatically and delivers the answer before anyone opens a laptop."
 ---
 
-Every team meeting about lead generation started the same way.
+Picture the scene.
 
-Someone opened the OKR dashboard. Someone else opened a Google Sheet. The next few minutes looked like a live calculation session — how far are we from target? What's the daily run rate? If we stay at this pace, where do we land at month end?
+Seven people in a meeting. Someone is sharing their screen — the OKR dashboard on one side, a Google Sheet on the other. Someone else is typing numbers into a calculator. A third person is scrolling to find which category belongs to which POC.
+
+Everyone is waiting. Nobody is deciding.
+
+This was the first six minutes of every lead generation review. Not strategy. Not action. Just people in a room doing math that a spreadsheet should have already done.
 
 The answers always came. But they always came late.
-
-By the time we'd worked out that a category was tracking at 67% and would miss the month by 40 leads, six minutes had passed. Six minutes of math instead of deciding what to do about it.
 
 That wasn't the worst part.
 
@@ -45,25 +47,27 @@ I started thinking about what the meeting would look like if everyone already kn
 
 ## What I actually needed
 
-Not a better dashboard. We had a dashboard. The problem wasn't access to data — it was the gap between the data existing and the data being useful. Processed, shaped, delivered.
+Not a better dashboard. We had a dashboard.
 
-What I needed was simple: every morning, before anyone opens a laptop, an email arrives. It's already done the math. It knows which categories are on track, which are slipping, which are critical. It knows who owns each one. It projects where each category finishes if the current pace holds. It sorts by urgency — so the first thing you read is the thing that needs immediate attention.
+The problem wasn't visibility. It was the gap between data existing and data being useful — processed, ranked, delivered to the right people before they need to ask for it.
 
-No downloading. No calculating. No asking "who owns this one?"
+I wanted one thing: an email that lands every morning before the first meeting. Not a data dump. A briefing. The kind a sharp analyst would prepare — except it shows up automatically, every single day, whether anyone remembers to ask for it or not.
 
-Just: here is what is happening, here is what needs attention today, here is who needs to act.
+Which categories are bleeding. Who owns them. How far behind. Where they finish if nothing changes today. In that order, by urgency. Not alphabetically. Not by team. By how badly they need attention right now.
+
+That's it. The whole idea. Completely obvious once you say it out loud. Completely missing from how we were actually operating.
 
 ---
 
 ## Building it
 
-I built the entire system with Claude Code.
+I built the whole thing with Claude Code. No data team. No engineering backlog. Just a clear problem, a clear output, and enough iterations until it worked.
 
-It connects to the data source, calculates daily run-rate achievement for every category, compares it against the expected pace for that point in the month, and classifies each category into a severity tier: on track, nearly there, needs push, behind, critical. It pulls the POC for every flagged item. It formats everything into a clean email and sends it to the full team by 10 AM.
+The logic isn't complicated once you write it down. Take the data. Calculate how each category is performing against where it should be on this specific day of the month — not the monthly target, but the expected pace right now. Rank by gap. Flag the owner. Project the finish. Send at 10 AM.
 
-It also projects month-end outcomes: based on current pace, this category will finish here — not the target, not the hope, the actual mathematical outcome if nothing changes.
+What took time was getting the projections right. Not just "you're behind" — but "at this pace, you'll finish at 71% of target by month end." That number is what changes a conversation. It turns "we're a bit behind" into "we will miss by this much unless something changes today."
 
-I described the problem. Worked through the logic. Kept iterating until it ran cleanly on its own. Nobody else needed to be involved.
+That specificity is what makes people act. Vague warnings get noted. Precise consequences get addressed.
 
 ---
 
@@ -87,7 +91,7 @@ That's the only gap that actually mattered.
 That would solve the data freshness problem but not the processing problem. Someone still has to open it, read it, calculate the gaps, identify who's behind, and summarise for the team. The bottleneck isn't the dashboard — it's the manual steps between data and decision.
 
 **How do you handle multiple POCs across different categories?**
-The system maps each category to its owner. When a category is flagged, the POC is pulled automatically and shown alongside it. No looking up, no remembering. The right name is there the moment the problem surfaces.
+The system maps every category to its owner. When something is flagged, the name is right there — no cross-referencing, no asking around. The value isn't just knowing what's broken. It's knowing who to talk to about it before the meeting starts.
 
-**Can you build internal data tools without a data team?**
-Yes. The gap between having a clear problem and having a working system has never been smaller. You need to understand the logic of what you want built — the rules, the tiers, the outputs — and be willing to iterate. The technical execution is no longer the constraint it used to be.
+**Can you build internal reporting tools without a data or engineering team?**
+Yes — if you can clearly describe what you want the output to look like and what logic should drive it. The hard part was never writing the code. It was thinking through the rules: what counts as "behind", how to calculate a projection, what order things should surface in. Once that thinking is done, the rest follows.
