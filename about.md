@@ -4,15 +4,17 @@ title: About
 permalink: /about/
 ---
 
-Jithin Raaj is a growth marketer and builder based in Kochi, Kerala.
+Kochi-based. Head of Social at Entri.
 
-He is Head of Social Media at [Entri](https://entri.app), one of India's leading regional-language edtech platforms. Over eight years, he grew the social operation from scratch — building a 42-person team, expanding across YouTube, Instagram, and Facebook in 5 languages, and reaching 19M+ followers. He joined as employee #14.
+Eight years building the social operation from scratch — across YouTube, Instagram, and Facebook in 5 languages. Joined when the company was 13 people. The team is 42 now.
 
-Along the way, he started building the tools to manage it. Real-time dashboards tracking 100+ handles. Automated monitoring systems that surface problems before they affect results. Self-running reports that go out every morning without anyone touching them. The line between growth and engineering stopped meaning much.
+Somewhere along the way, the problems got too big for spreadsheets. So started building tools. Dashboards that track everything in real time. Monitoring systems that catch issues before anyone notices. Reports that go out every morning without anyone sending them. That side of the work has become just as natural as the marketing.
 
-He has a B.Tech in Computer Science from CUSAT and approaches most problems the same way — understand it properly, then fix it in a way that doesn't need fixing again.
+B.Tech in Computer Science, which mostly sat unused for years. Turns out it didn't go anywhere.
 
-Films are a serious interest, not a casual one. So is anything at the intersection of technology and how people actually live.
+Films are something taken seriously. Not as a hobby — more like a way of thinking. The technology side keeps pulling too, especially where it quietly changes how people live and work.
+
+Still figuring out what all of this adds up to. But the direction feels right.
 
 ---
 
