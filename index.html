@@ -32,3 +32,41 @@ title: Jithin Raaj
   </div>
 
 </section>
+
+<script>
+window.addEventListener('load', function () {
+  var photo = document.querySelector('.home-photo');
+  if (!photo || typeof gsap === 'undefined') return;
+
+  /* Reveal on load — slides up, fades in */
+  gsap.fromTo(photo,
+    { y: 32, opacity: 0, filter: 'blur(6px)' },
+    { y: 0, opacity: 1, filter: 'blur(0px)', duration: 1.1, ease: 'power3.out', delay: 0.1 }
+  );
+
+  /* Tilt on mouse move */
+  photo.addEventListener('mousemove', function (e) {
+    var r = photo.getBoundingClientRect();
+    var cx = r.left + r.width  / 2;
+    var cy = r.top  + r.height / 2;
+    var dx = (e.clientX - cx) / (r.width  / 2);
+    var dy = (e.clientY - cy) / (r.height / 2);
+    gsap.to(photo, {
+      rotateY:  dx * 6,
+      rotateX: -dy * 4,
+      scale: 1.02,
+      duration: 0.5,
+      ease: 'power2.out',
+      transformPerspective: 800,
+      transformOrigin: 'center center'
+    });
+  });
+
+  photo.addEventListener('mouseleave', function () {
+    gsap.to(photo, {
+      rotateY: 0, rotateX: 0, scale: 1,
+      duration: 0.8, ease: 'elastic.out(1, 0.5)'
+    });
+  });
+});
+</script>
