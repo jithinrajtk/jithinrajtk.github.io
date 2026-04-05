@@ -212,8 +212,8 @@ img {
 }
 
 .home-photo {
-  width: 72px;
-  height: 72px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
