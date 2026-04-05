@@ -211,6 +211,23 @@ img {
   margin-bottom: 32px;
 }
 
+.home-photo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  filter: grayscale(20%);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  cursor: default;
+}
+
+.home-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  filter: grayscale(0%);
+}
+
 .home-bio {
   font-size: 1rem;
   line-height: 1.75;
