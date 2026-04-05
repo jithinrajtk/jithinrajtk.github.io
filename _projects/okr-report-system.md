@@ -11,29 +11,25 @@ tools: [Claude Code]
 <figcaption>Figures shown are illustrative. Actual performance data is confidential.</figcaption>
 </figure>
 
-Every morning, someone used to download data from the dashboard, open a spreadsheet, calculate gaps, figure out who was behind, and send a summary to the team. It took time. It happened after a delay. And the decisions it enabled were already an hour old.
+The morning used to start with a ritual nobody asked for: download the data, open a spreadsheet, calculate how far each category was from target, figure out who owned what, format it, and send. By the time the summary reached the team, the day had already started without it.
 
-That process is now fully automated.
-
-**The problem it solves**
-
-When you're running lead generation across many categories with different owners, knowing *what needs attention right now* is the actual job. Not downloading data. Not calculating percentages. Not figuring out which POC owns which category. The system should surface that — instantly, every day, without anyone asking it to.
+The problem wasn't the data. It was the distance between the data and the decision.
 
 **What it does**
 
-A daily automated email lands in the team's inbox each morning. One look tells you everything:
+Every morning, one email arrives. No one has to ask for it, pull it, or build it — it just lands. Inside:
 
-- Which categories are on track, nearly there, or in the critical zone
-- The exact deficit or surplus for each — how far behind, how far ahead
-- Who the POC is for every flagged category, so there's no ambiguity about ownership
-- A month-end projection based on current run rate — if nothing changes, where does each category land?
-- Severity tiers: categories are sorted by how urgent the gap is, not alphabetically
+- Every category ranked by urgency, not alphabetically
+- Exact deficit or surplus against the daily run-rate target
+- The POC responsible for each flagged item — no ambiguity, no chasing
+- A month-end projection: if the current pace holds, where does each category finish?
+- Severity tiers: on track, nearly there, needs push, behind, critical
 
-No one downloads anything. No one runs numbers. The decision-relevant information arrives pre-processed.
+One look. Full picture. The right person knows what they need to do before the first meeting of the day.
 
 **What it replaced**
 
-Manual data export → spreadsheet calculation → formatting → sending. A repeatable task that consumed time every single day, done by a person who should have been using that time for the decisions the data enables.
+A daily manual process — download, calculate, format, send — that consumed real time and delivered stale information. That time now goes toward acting on what the report surfaces.
 
 **Built with**
 
