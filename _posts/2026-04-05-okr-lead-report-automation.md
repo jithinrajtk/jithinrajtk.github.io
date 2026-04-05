@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Every Morning, the Report Already Knows What Needs Fixing"
-subtitle: "How I built an automated lead performance report that replaced 45 minutes of manual calculation with an email that arrives before the first meeting of the day."
+subtitle: "How I built an automated lead performance report that replaced manual pre-meeting calculation with an email that arrives before anyone opens a laptop."
 date: 2026-04-05
 tags: [automation, okr, internal-tools, claude-code, data, social-media]
 description: "Every morning meeting on lead generation started with someone opening a dashboard and a spreadsheet to manually calculate where we stood. I built a system that does it automatically and delivers the answer before anyone opens a laptop."
@@ -9,11 +9,11 @@ description: "Every morning meeting on lead generation started with someone open
 
 Picture the scene.
 
-Seven people in a meeting. The performance dashboard is open. So is a Google Sheet. Someone is running quick calculations — a spreadsheet here, an AI tool there — trying to get to the number fast enough to be useful.
+A room full of people in a meeting. The performance dashboard is open. So is a Google Sheet. Someone is running quick calculations — a spreadsheet here, an AI tool there — trying to get to the number fast enough to be useful.
 
 Everyone is trying. Nobody is deciding yet.
 
-This was the first six minutes of every lead generation review. Smart people, doing their best with what was available — and still spending the opening minutes of every meeting doing math instead of making calls. That's not a people problem. That's a system that wasn't set up to help them.
+This was the opening of every lead generation review. Smart people, doing their best with what was available — and still spending the opening minutes of every meeting doing math instead of making calls. That's not a people problem. That's a system that wasn't set up to help them.
 
 The answers always came. But they always came late.
 
@@ -23,7 +23,7 @@ That wasn't the worst part.
 
 ## The data was already old
 
-The dashboard pulled numbers till the previous day. Data for today wouldn't show up until after midnight. So every morning meeting — the one where you're supposed to course-correct before the day gets away from you — was running on information that was at least 12 hours stale.
+The dashboard pulled numbers till the previous day. Data for today wouldn't show up until after midnight. So every morning meeting — the one where you're supposed to course-correct before the day gets away from you — was running on information that was already hours old by the time anyone looked at it.
 
 We were doing real-time math on yesterday's numbers. And calling it a data-driven meeting.
 
@@ -63,7 +63,7 @@ That's it. The whole idea. Completely obvious once you say it out loud. Complete
 
 I built the whole thing with Claude Code. No data team. No engineering backlog. Just a clear problem, a clear output, and enough iterations until it worked.
 
-The logic isn't complicated once you write it down. Take the data. Calculate how each category is performing against where it should be on this specific day of the month — not the monthly target, but the expected pace right now. Rank by gap. Flag the owner. Project the finish. Send at 10 AM.
+The logic isn't complicated once you write it down. Take the data. Calculate how each category is performing against where it should be on this specific day of the month — not the monthly target, but the expected pace right now. Rank by gap. Flag the owner. Project the finish. Send every morning before the day starts.
 
 What took time was getting the projections right. Not just "you're behind" — but "at this pace, you'll finish at 71% of target by month end." That number is what changes a conversation. It turns "we're a bit behind" into "we will miss by this much unless something changes today."
 
@@ -75,11 +75,11 @@ That specificity is what makes people act. Vague warnings get noted. Precise con
 
 People walk in already knowing.
 
-The email came at 10 AM. Everyone's seen it. The categories that need attention are identified. The POCs already know they're flagged. Sometimes the problem is already being addressed before the meeting starts.
+The email is already there when the day starts. Everyone's seen it. The categories that need attention are identified. The POCs already know they're flagged. Sometimes the problem is already being addressed before the meeting starts.
 
 The meeting stopped being a data retrieval session and became what it was always supposed to be: a decision-making session.
 
-The data is still from yesterday — the source system hasn't changed. But the gap between *data exists* and *team has processed it and is ready to act* went from 45 minutes to zero.
+The data is still from yesterday — the source system hasn't changed. But the gap between *data exists* and *team has processed it and is ready to act* went from however long it used to take — to zero.
 
 That's the only gap that actually mattered.
 
