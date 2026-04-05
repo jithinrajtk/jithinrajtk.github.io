@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Every Morning, the Report Already Knows What Needs Fixing"
-subtitle: "How I built an automated OKR lead report that replaced 45 minutes of manual calculation with an email that arrives before the first meeting of the day."
+subtitle: "How I built an automated lead performance report that replaced 45 minutes of manual calculation with an email that arrives before the first meeting of the day."
 date: 2026-04-05
 tags: [automation, okr, internal-tools, claude-code, data, social-media]
 description: "Every morning meeting on lead generation started with someone opening a dashboard and a spreadsheet to manually calculate where we stood. I built a system that does it automatically and delivers the answer before anyone opens a laptop."
@@ -9,7 +9,7 @@ description: "Every morning meeting on lead generation started with someone open
 
 Picture the scene.
 
-Seven people in a meeting. Someone is sharing their screen — the OKR dashboard on one side, a Google Sheet on the other. Someone else is typing numbers into a calculator. A third person is scrolling to find which category belongs to which POC.
+Seven people in a meeting. Someone is sharing their screen — the performance dashboard on one side, a Google Sheet on the other. Someone else is typing numbers into a calculator. A third person is scrolling to find which category belongs to which POC.
 
 Everyone is waiting. Nobody is deciding.
 
