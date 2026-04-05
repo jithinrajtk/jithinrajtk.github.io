@@ -6,9 +6,10 @@ built: 2026
 tools: [Claude Code]
 ---
 
-![OKR Lead Status Report — automated daily email header](/assets/images/okr-report-header.png)
-
-*The figures shown above are illustrative. All actual performance data, targets, and category details are confidential and have been withheld.*
+<figure>
+<img src="/assets/images/okr-report-header.png" alt="OKR Lead Status Report — automated daily email header" />
+<figcaption>Figures shown are illustrative. Actual performance data is confidential.</figcaption>
+</figure>
 
 Every morning, someone used to download data from the dashboard, open a spreadsheet, calculate gaps, figure out who was behind, and send a summary to the team. It took time. It happened after a delay. And the decisions it enabled were already an hour old.
 

@@ -552,6 +552,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 2em 0;
 }
 
+.prose figure {
+  margin: 2em 0;
+}
+
+.prose figure img {
+  margin: 0;
+  display: block;
+}
+
+.prose figcaption {
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  margin-top: 6px;
+  font-style: normal;
+}
+
 .prose hr {
   border: none;
   border-top: 1px solid var(--border);
