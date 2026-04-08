@@ -25,7 +25,8 @@ layout: default
     "url": "https://jithinraaj.in"
   },
   "url": "{{ page.url | absolute_url }}",
-  "mainEntityOfPage": "{{ page.url | absolute_url }}"
+  "mainEntityOfPage": "{{ page.url | absolute_url }}",
+  "wordCount": {{ content | number_of_words }}
 }
 </script>
 

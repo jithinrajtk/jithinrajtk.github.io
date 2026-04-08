@@ -7,6 +7,7 @@ tags: [instagram, automation, claude-code, social-media, internal-tools, content
 description: "How to monitor Instagram stories across 25+ pages without opening the app — a custom dashboard with story spacing violation alerts, per-page tracking, and automated hourly email reports. Built with Claude Code without an engineering team."
 image: /assets/images/storydash-overview.png
 seo_title: "How to Monitor Instagram Stories Across Multiple Accounts (Dashboard + Email Alerts)"
+last_modified_at: 2026-04-08
 ---
 
 Every morning, the routine was the same.
@@ -17,7 +18,7 @@ Twenty-five pages later, thirty minutes had passed. And I hadn't done anything u
 
 That's not monitoring. That's just time disappearing.
 
-This post covers how to monitor Instagram story activity across 25+ pages without opening the app — including how to catch story spacing violations that quietly hurt reach, how to build an internal story dashboard, and how to set up automated hourly email reports. Built entirely with Claude Code by someone running content operations, not engineering.
+This post covers how to monitor Instagram story activity across 25+ pages without opening the app — including how to catch story spacing violations that quietly hurt reach, how to build an internal Instagram story analytics dashboard, and how to set up automated hourly email reports. Built entirely with Claude Code by someone running content operations, not engineering.
 
 ---
 
@@ -55,7 +56,7 @@ I showed this to the team. Nobody spoke for a second.
 
 ---
 
-## Drill into any page
+## Per-page Instagram story analytics: timestamps, thumbnails, and spacing
 
 Click any page, see the full day: thumbnails, timestamps, exactly where the gaps are too short.
 
@@ -83,9 +84,29 @@ The information arrives. No one has to open anything.
 
 Built with **Claude Code**: dashboard, spacing logic, automated emails, all of it.
 
-I manage content operations, not a dev team. No engineer involved, no ticket raised. Just a problem that was costing thirty minutes every morning, and a tool that stopped it.
+The process was: describe the problem in plain language, see what gets built, describe what's wrong or missing, iterate. No ticket raised. No engineer looped in. No technical spec written.
 
-*Running in production.*
+I started with the core problem — I need to see story activity across all pages in one view. Claude Code built the dashboard. Then spacing detection: flag anything under 30 minutes between consecutive stories. It added the logic and the violations view. Then the email report: send this data hourly, formatted cleanly. Done.
+
+Three features. One clear problem statement each time. The whole thing went from idea to running in production without once opening a code editor.
+
+I manage content operations. Building tools is not a skill I have. That's the point.
+
+*Running in production.* Full project overview: [StoryDash →](/projects/storydash/)
+
+---
+
+## What you need to build an Instagram story monitoring tool
+
+The foundation is the **Instagram Graph API** — Meta's official API for accessing story data from pages you manage. To use it:
+
+- A Facebook developer account and an approved app
+- Instagram Business or Creator accounts (personal accounts have no API access)
+- Page access tokens for each account you want to monitor
+
+The API returns story media objects with timestamps. From there, the spacing logic, the dashboard, and the email report are all built on top of that data.
+
+Most teams don't have this not because it's technically hard — it's that it requires an engineer to set up and never gets prioritised against product work. Claude Code removes that dependency entirely.
 
 ---
 
