@@ -86,7 +86,7 @@ Built with **Claude Code**: dashboard, spacing logic, automated emails, all of i
 
 The process was: describe the problem in plain language, see what gets built, describe what's wrong or missing, iterate. No ticket raised. No engineer looped in. No technical spec written.
 
-I started with the core problem — I need to see story activity across all pages in one view. Claude Code built the dashboard. Then spacing detection: flag anything under 30 minutes between consecutive stories. It added the logic and the violations view. Then the email report: send this data hourly, formatted cleanly. Done.
+I started with the core problem: I need to see story activity across all pages in one view. Claude Code built the dashboard. Then spacing detection: flag anything under 30 minutes between consecutive stories. It added the logic and the violations view. Then the email report: send this data hourly, formatted cleanly. Done.
 
 Three features. One clear problem statement each time. The whole thing went from idea to running in production without once opening a code editor.
 
@@ -106,7 +106,7 @@ The foundation is the **Instagram Graph API** — Meta's official API for access
 
 The API returns story media objects with timestamps. From there, the spacing logic, the dashboard, and the email report are all built on top of that data.
 
-Most teams don't have this not because it's technically hard — it's that it requires an engineer to set up and never gets prioritised against product work. Claude Code removes that dependency entirely.
+Most teams don't have this. Not because it's technically hard. It just requires an engineer to set up and never gets prioritised against product work. Claude Code removes that dependency entirely.
 
 ---
 
@@ -121,7 +121,7 @@ Pull story data via the Instagram Graph API — timestamps, media count, last ac
 All pages, story counts, last active time, and posting status in a single screen. The moment you have to click into individual pages, the system breaks down at scale.
 
 **3. Automated spacing checks**
-Set a minimum gap threshold (30–60 minutes is the safe range). Flag anything under it automatically. Without this, spacing violations happen silently every day — you only find out when reach drops.
+Set a minimum gap threshold (30–60 minutes is the safe range). Flag anything under it automatically. Without this, spacing violations happen silently every day. You only find out when reach drops.
 
 **4. Proactive reporting**
 Information should find you, not the other way around. Scheduled email reports (hourly or daily) mean the team always knows the status without anyone opening a dashboard. If you're still pulling the data yourself, you've built a lookup tool, not a monitoring system.
@@ -130,7 +130,7 @@ StoryDash was built around these four. But the architecture applies to any Insta
 
 ---
 
-## Questions people ask about this
+---
 
 **Does posting Instagram stories too close together hurt reach?**
 Yes. Stories posted within minutes of each other are treated as a burst by the algorithm, not a cadence. Reach and views thin out. A minimum gap of 30 to 60 minutes between stories is the recommended safe window for consistent distribution.

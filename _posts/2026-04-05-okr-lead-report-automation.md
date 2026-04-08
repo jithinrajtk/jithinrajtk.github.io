@@ -9,7 +9,7 @@ description: "How to automate a daily lead generation performance report — pul
 
 Picture the scene.
 
-A room full of people in a meeting. The performance dashboard is open. So is a Google Sheet. Someone is running quick calculations — a spreadsheet here, an AI tool there — trying to get to the number fast enough to be useful.
+A room full of people in a meeting. The performance dashboard is open. So is a Google Sheet. Someone is running quick calculations, a spreadsheet here, an AI tool there, trying to get to the number fast enough to be useful.
 
 Everyone is trying. Nobody is deciding yet.
 
@@ -33,7 +33,7 @@ I've been running social media operations long enough to know what a real-time d
 
 ## The thing nobody says out loud
 
-There's an unspoken cost to manual calculation in a team setting. Someone has to be the one who *knows the numbers*. They're always slightly under pressure to have them ready. They open the sheet, run the figures, try to remember which POC owns which category, and present while everyone else waits.
+Nobody says this out loud. Someone has to be the one who *knows the numbers*. They're always slightly under pressure to have them ready. They open the sheet, run the figures, try to remember which POC owns which category, and present while everyone else waits.
 
 That person's job in that moment isn't strategy. It's data retrieval.
 
@@ -49,7 +49,7 @@ I started thinking about what the meeting would look like if everyone already kn
 
 Not a better dashboard. We had a dashboard.
 
-The problem wasn't visibility. It was the gap between data existing and data being useful — processed, ranked, delivered to the right people before they need to ask for it.
+The problem wasn't visibility. It was the gap between data existing and data being useful. Processed, ranked, delivered to the right people before they need to ask for it.
 
 I wanted one thing: an email that lands every morning before the first meeting. Not a data dump. A briefing. The kind a sharp analyst would prepare — except it shows up automatically, every single day, whether anyone remembers to ask for it or not.
 
@@ -68,9 +68,9 @@ That's it. The whole idea. Completely obvious once you say it out loud. Complete
 
 I built the whole thing with Claude Code. No data team. No engineering backlog. Just a clear problem, a clear output, and enough iterations until it worked.
 
-The logic isn't complicated once you write it down. Take the data. Calculate how each category is performing against where it should be on this specific day of the month — not the monthly target, but the expected pace right now. Rank by gap. Flag the owner. Project the finish. Send every morning before the day starts.
+The logic isn't complicated once you write it down. Take the data. Calculate how each category is performing against where it should be on this specific day of the month. Not the monthly target, but the expected pace right now. Rank by gap. Flag the owner. Project the finish. Send every morning before the day starts.
 
-What took time was getting the projections right. Not just "you're behind" — but "at this pace, you'll finish at 71% of target by month end." That number is what changes a conversation. It turns "we're a bit behind" into "we will miss by this much unless something changes today."
+What took time was getting the projections right. Not just "you're behind." More like: "at this pace, you'll finish at 71% of target by month end." That number is what changes a conversation. It turns "we're a bit behind" into "we will miss by this much unless something changes today."
 
 That specificity is what makes people act. Vague warnings get noted. Precise consequences get addressed.
 
@@ -94,13 +94,13 @@ The email is already there when the day starts. Everyone's seen it. The categori
 
 The meeting stopped being a data retrieval session and became what it was always supposed to be: a decision-making session.
 
-The data is still from yesterday — the source system hasn't changed. But the gap between *data exists* and *team has processed it and is ready to act* went from however long it used to take — to zero.
+The data is still from yesterday. The source system hasn't changed. But the gap between *data exists* and *team has processed it and is ready to act* went from however long it used to take, to zero.
 
 That's the only gap that actually mattered.
 
 ---
 
-## Questions people ask about this
+---
 
 **Why not just fix the dashboard to update in real time?**
 That would solve the data freshness problem but not the processing problem. Someone still has to open it, read it, calculate the gaps, identify who's behind, and summarise for the team. The bottleneck isn't the dashboard — it's the manual steps between data and decision.
