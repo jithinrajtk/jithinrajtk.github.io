@@ -6,6 +6,7 @@ date: 2026-04-05
 tags: [instagram, automation, claude-code, social-media, internal-tools, content-operations, instagram-monitoring, story-tracking, multiple-pages, social-media-dashboard]
 description: "How to monitor Instagram stories across 25+ pages without opening the app — a custom dashboard with story spacing violation alerts, per-page tracking, and automated hourly email reports. Built with Claude Code without an engineering team."
 image: /assets/images/storydash-overview.png
+seo_title: "How to Monitor Instagram Stories Across Multiple Accounts (Dashboard + Email Alerts)"
 ---
 
 Every morning, the routine was the same.
@@ -85,6 +86,26 @@ Built with **Claude Code**: dashboard, spacing logic, automated emails, all of i
 I manage content operations, not a dev team. No engineer involved, no ticket raised. Just a problem that was costing thirty minutes every morning, and a tool that stopped it.
 
 *Running in production.*
+
+---
+
+## How to monitor multiple Instagram accounts at scale
+
+The pattern works whether you're building your own tool or evaluating options. Four things you need:
+
+**1. A single data source for all pages**
+Pull story data via the Instagram Graph API — timestamps, media count, last activity per page. If your data lives in separate places (or only inside the app), you'll always be checking manually.
+
+**2. One view across all accounts**
+All pages, story counts, last active time, and posting status in a single screen. The moment you have to click into individual pages, the system breaks down at scale.
+
+**3. Automated spacing checks**
+Set a minimum gap threshold (30–60 minutes is the safe range). Flag anything under it automatically. Without this, spacing violations happen silently every day — you only find out when reach drops.
+
+**4. Proactive reporting**
+Information should find you, not the other way around. Scheduled email reports (hourly or daily) mean the team always knows the status without anyone opening a dashboard. If you're still pulling the data yourself, you've built a lookup tool, not a monitoring system.
+
+StoryDash was built around these four. But the architecture applies to any Instagram monitoring setup at scale.
 
 ---
 
