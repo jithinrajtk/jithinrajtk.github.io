@@ -5,6 +5,7 @@ subtitle: "How I built an Instagram story monitoring dashboard with spacing aler
 date: 2026-04-05
 tags: [instagram, automation, claude-code, social-media, internal-tools, content-operations, instagram-monitoring, story-tracking, multiple-pages, social-media-dashboard]
 description: "How to monitor Instagram stories across 25+ pages without opening the app — a custom dashboard with story spacing violation alerts, per-page tracking, and automated hourly email reports. Built with Claude Code without an engineering team."
+image: /assets/images/storydash-overview.png
 ---
 
 Every morning, the routine was the same.
@@ -29,7 +30,9 @@ We were posting stories two minutes apart on some pages. Sometimes one minute. W
 
 ---
 
-## So I built StoryDash
+## So I built StoryDash — an Instagram story monitoring dashboard
+
+StoryDash is an internal Instagram monitoring dashboard that tracks story activity across multiple pages in one view, flags story spacing violations in real time, and sends automated hourly email reports — all without opening the app.
 
 An internal dashboard. One screen. Every page, every story posted today, when each was last active, and whether the spacing is within the safe window.
 
@@ -39,7 +42,7 @@ An internal dashboard. One screen. Every page, every story posted today, when ea
 
 ---
 
-## Catching story spacing violations
+## Catching Instagram story spacing violations automatically
 
 When I added the spacing check, I expected maybe two or three pages with issues.
 
@@ -75,7 +78,7 @@ The information arrives. No one has to open anything.
 
 ---
 
-## How I built it with Claude Code
+## How I built an Instagram monitoring tool with Claude Code (no engineers)
 
 Built with **Claude Code**: dashboard, spacing logic, automated emails, all of it.
 
@@ -97,7 +100,7 @@ Build a dashboard that pulls story data and displays post times, gaps between st
 Yes. Claude Code lets you go from a clear problem description to a working internal tool without engineering resources. StoryDash was built this way: dashboard, backend logic, and automated reports, by someone managing content operations.
 
 **What is the best tool to manage multiple Instagram pages at once?**
-Most third-party tools focus on scheduling, not monitoring. For teams managing 25+ pages, the gap is usually real-time visibility — knowing which pages have posted stories today, which haven't, and whether story frequency is within safe limits. A custom internal dashboard like StoryDash solves this better than generic tools because it's built around your specific pages and team workflow.
+A custom internal dashboard built around your specific pages beats any generic third-party tool for teams managing 25+. Most third-party tools focus on scheduling, not monitoring. The real gap is real-time visibility — knowing which pages have posted stories today, which haven't, and whether story frequency is within safe limits. A tool like StoryDash solves this because it's purpose-built for your workflow, not a broad audience.
 
 **How do you track Instagram stories across multiple accounts?**
 The reliable way is to pull story data via the Instagram Graph API into a single dashboard, showing all accounts in one view with timestamps and activity status. This removes the need to manually open each account. Pair it with automated reports sent on a schedule so the team always knows the status without checking.
@@ -107,3 +110,68 @@ Story spacing is the time gap between consecutive stories on a single page. When
 
 **How do you manage Instagram content operations at scale?**
 Content operations at scale means replacing manual checks with systems that surface the right information automatically. For Instagram specifically: a monitoring dashboard that shows story activity across all pages at once, automated alerts for spacing violations, and scheduled email reports that deliver status updates without anyone needing to open a dashboard. The goal is to make the team's default state informed, not reactive.
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does posting Instagram stories too close together hurt reach?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Stories posted within minutes of each other are treated as a burst by the algorithm, not a cadence. Reach and views thin out. A minimum gap of 30 to 60 minutes between stories is the recommended safe window for consistent distribution."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you monitor Instagram story activity across multiple pages without opening the app?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Build a dashboard that pulls story data and displays post times, gaps between stories, and pages with no activity in one view. Pair it with automated email reports so the information arrives on a schedule rather than requiring anyone to check manually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you build internal social media tools without a developer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Claude Code lets you go from a clear problem description to a working internal tool without engineering resources. StoryDash was built this way: dashboard, backend logic, and automated reports, by someone managing content operations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the best tool to manage multiple Instagram pages at once?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A custom internal dashboard built around your specific pages beats any generic third-party tool for teams managing 25+. Most third-party tools focus on scheduling, not monitoring. The real gap is real-time visibility — knowing which pages have posted stories today, which haven't, and whether story frequency is within safe limits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you track Instagram stories across multiple accounts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The reliable way is to pull story data via the Instagram Graph API into a single dashboard, showing all accounts in one view with timestamps and activity status. This removes the need to manually open each account. Pair it with automated reports sent on a schedule so the team always knows the status without checking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Instagram story spacing and why does it matter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Story spacing is the time gap between consecutive stories on a single page. When stories are posted too close together — under 30 minutes — the algorithm treats it as a burst and reduces distribution. Each story gets fewer views than it would with proper spacing. At scale, across many pages, this happens constantly and silently unless you have a system that tracks and flags it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you manage Instagram content operations at scale?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Content operations at scale means replacing manual checks with systems that surface the right information automatically. For Instagram specifically: a monitoring dashboard that shows story activity across all pages at once, automated alerts for spacing violations, and scheduled email reports that deliver status updates without anyone needing to open a dashboard."
+      }
+    }
+  ]
+}
+</script>
