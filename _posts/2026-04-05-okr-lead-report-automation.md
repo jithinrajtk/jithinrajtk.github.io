@@ -18,7 +18,7 @@ A room full of people in a meeting. The performance dashboard is open. So is a G
 
 Everyone is trying. Nobody is deciding yet.
 
-This was the opening of every lead generation review. Smart people, doing their best with what was available — and still spending the opening minutes of every meeting doing math instead of making calls. That's not a people problem. That's a system that wasn't set up to help them.
+This was the opening of every lead generation review. Smart people doing their best with what they had, and still spending the first ten minutes of every meeting running numbers instead of making calls. That's not a people problem. The system just wasn't built for it.
 
 The answers always came. But they always came late.
 
@@ -30,7 +30,7 @@ That wasn't the worst part.
 
 The dashboard pulled numbers till the previous day. Data for today wouldn't show up until after midnight. So every morning meeting — the one where you're supposed to course-correct before the day gets away from you — was running on information that was already hours old by the time anyone looked at it.
 
-We were doing real-time math on yesterday's numbers. And calling it a data-driven meeting.
+We were doing real-time math on yesterday's numbers. And acting like that counted.
 
 I've been running social media operations long enough to know what a real-time decision feels like, and what a delayed one costs. A lead category tracking at 65% on Day 10 is recoverable. The same category at 65% on Day 25 isn't. The window to act matters. And every morning we were showing up to the window hours after it opened.
 
@@ -97,13 +97,16 @@ People walk in already knowing.
 
 The email is already there when the day starts. Everyone's seen it. The categories that need attention are identified. The POCs already know they're flagged. Sometimes the problem is already being addressed before the meeting starts.
 
-The meeting stopped being a data retrieval session and became what it was always supposed to be: a decision-making session.
+The meeting became what it was always supposed to be. People making calls, not running the numbers.
 
-The data is still from yesterday. The source system hasn't changed. But the gap between *data exists* and *team has processed it and is ready to act* went from however long it used to take, to zero.
+The data still updates at midnight. That part didn't change. But the gap between numbers existing and the team being ready to act on them collapsed to nothing.
 
 That's the only gap that actually mattered.
 
 ---
+
+<details>
+<summary>Common questions</summary>
 
 **Why not just fix the dashboard to update in real time?**
 That would solve the data freshness problem but not the processing problem. Someone still has to open it, read it, calculate the gaps, identify who's behind, and summarise for the team. The bottleneck isn't the dashboard — it's the manual steps between data and decision.
@@ -124,7 +127,9 @@ Run rate is the daily pace a category needs to hit its monthly target. Target is
 Watch what someone does before the meeting. What do they open, what do they calculate, what order do they walk through it? Write that down. Then build something that does exactly that on a schedule and sends it before anyone has to ask. The goal isn't a better dashboard. It's closing the gap between data existing and the team being ready to act on it.
 
 **What should a daily OKR status email include?**
-The most useful format: overall status at a glance (how many categories are on track vs behind), then a ranked list of categories that need attention — sorted by urgency, not alphabetically. Each entry should show the category name, the owner, the current achievement percentage, and the projected month-end finish if nothing changes. That last number — the projection — is what drives decisions. Everything else is context.
+The most useful format: overall status at a glance (how many categories are on track vs behind), then a ranked list of categories that need attention, sorted by urgency, not alphabetically. Each entry should show the category name, the owner, the current achievement percentage, and the projected month-end finish if nothing changes. That last number, the projection, is what drives decisions. Everything else is context.
+
+</details>
 
 ---
 

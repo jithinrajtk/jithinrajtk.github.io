@@ -26,7 +26,7 @@ That's not monitoring. That's just time disappearing.
 
 When you're managing 25+ pages, there's an issue that doesn't show up anywhere: it's not *whether* you post stories. It's *when*.
 
-Stories posted too close together don't get distributed the way you'd expect. The algorithm sees a burst, not a cadence. Reach drops. Views thin out. And because you can't manually track gaps across that many pages, it just keeps happening quietly.
+Stories posted too close together don't spread the way they should. The algorithm sees a burst, not a cadence. Reach drops. Views thin out. And because you can't manually track gaps across that many pages, it just keeps happening quietly.
 
 We were posting stories two minutes apart on some pages. Sometimes one minute. We had no idea.
 
@@ -80,7 +80,7 @@ The information arrives. No one has to open anything.
 
 ## How it got built
 
-**Claude Code**. Dashboard, spacing logic, automated emails — all of it.
+**Claude Code**. Dashboard, spacing logic, automated emails. All of it.
 
 Describe the problem. See what gets built. Describe what's wrong or missing. Iterate. No ticket raised. No engineer looped in. No technical spec written.
 
@@ -100,21 +100,20 @@ I manage content operations. Building tools is not a skill I have. That's the po
 
 The data comes from the **Instagram Graph API**. Timestamps, media objects, which page posted what and when. You need a Facebook developer account, an approved app, and Instagram Business accounts for each page you're monitoring. Personal accounts have no API access.
 
-Most teams don't have this running. Not because it's hard. It just needs someone to set it up once, and that request never beats actual product work. Claude Code removes that dependency entirely.
+Most teams don't have this running. Not because it's hard. It just needs someone to set it up once, and that request never beats actual product work. With Claude Code, I didn't need to wait on anyone.
 
 ---
 
 ## How to monitor multiple Instagram accounts at scale
 
-The pattern is the same whether you're building this yourself or figuring out what you actually need.
+One data source pulling from all pages. One screen where everything is visible at once, not the app, not separate tabs. Something that catches spacing violations before you find out from a reach drop. Reports that arrive without anyone requesting them.
 
-One data source pulling from all pages. One screen where everything is visible at once — not the app, not separate tabs. Something that catches spacing violations before you find out from a reach drop. Reports that arrive without anyone requesting them.
-
-If you have all four, you have a monitoring system. If you're missing any one, someone is still doing something manually every day. That's how you know it's not finished.
+Miss any one of those and someone's still doing something by hand every day. That's how you know it's not finished.
 
 ---
 
----
+<details>
+<summary>Common questions</summary>
 
 **Does posting Instagram stories too close together hurt reach?**
 Yes, and it's quiet about it. Stories posted too close together get treated as a burst by the algorithm — not a cadence. Reach drops, views thin out, and you don't get a notification. The safe window is 30 to 60 minutes between posts. Under that, you're losing distribution every single day without knowing it.
@@ -135,7 +134,9 @@ Instagram Graph API pulls story data — timestamps, media objects, activity per
 Story spacing is the time between consecutive stories on one page. Under 30 minutes and the algorithm reads it as a burst, not a cadence. Distribution drops. Each story gets fewer views than it should. At scale — 25 pages — this is happening every day, silently. You only catch it if something is tracking it.
 
 **How do you manage Instagram content operations at scale?**
-Replace the manual checks with systems that surface information automatically. A monitoring dashboard for story activity. Automated flags for spacing violations. Scheduled reports that arrive without anyone asking for them. The goal is for the team's default state to be informed — not for them to have to go looking.
+Replace the manual checks with systems that surface information automatically. A monitoring dashboard for story activity. Automated flags for spacing violations. Scheduled reports that arrive without anyone asking for them. The goal is for the team to always know what's happening without having to go looking for it.
+
+</details>
 
 <script type="application/ld+json">
 {

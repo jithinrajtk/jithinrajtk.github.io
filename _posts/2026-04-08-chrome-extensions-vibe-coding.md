@@ -44,7 +44,7 @@ A Chrome extension doesn't fake being a browser. It runs inside one.
 
 Same session. Same cookies. Same page you're already looking at. If the data is on your screen, an extension can read it. No tokens to replicate, no auth to reverse-engineer. You're already logged in. The extension just reaches in and takes what's there.
 
-That's the whole thing. Sounds obvious. Takes a while to actually see it.
+That's the whole thing. Sounds obvious until it isn't.
 
 ---
 
@@ -60,7 +60,7 @@ Then I just described what I wanted to Claude Code:
 
 Forty minutes later it was running in my browser.
 
-Not a rough draft. A working extension, doing exactly that, on a real dashboard with no export and no engineering team in the loop.
+Not a rough draft. A working extension doing exactly that, on a real dashboard, without filing a single ticket.
 
 Forty minutes to build something that saves twenty minutes every morning. Break-even is two days.
 
@@ -108,7 +108,7 @@ Now the first question is: can I see it on a screen?
 
 If yes, I can have something built today.
 
-That shift matters more than any specific extension I've made. Problems that used to sit in a backlog somewhere now take an afternoon. The dependency on engineers, on data teams, on tickets and timelines, it's just gone for this whole category of problem.
+That shift matters more than any specific extension I've made. Problems that used to sit in a backlog somewhere now take an afternoon. Needing an engineer, waiting on a ticket, hoping someone has bandwidth — that's just gone for this type of problem.
 
 Anyone can do this. You don't need to code. You need to know what you want and be specific about it.
 
@@ -120,13 +120,16 @@ The extension does the rest.
 
 ---
 
+<details>
+<summary>Common questions</summary>
+
 **Can you build a Chrome extension without knowing how to code?**
 
-Yes. Describe what's on the page, what you want, and what should happen with the data. Claude Code or Cursor handles the manifest, content scripts, everything. Right-click any element, hit Inspect, grab the class name — that's the hardest technical step. First version is maybe 80% right. A couple of corrections and it's done.
+Yes. Describe what's on the page, what you want, and what should happen with the data. Claude Code or Cursor handles the manifest, content scripts, everything. Right-click any element, hit Inspect, grab the class name. That's the hardest technical step. First version is maybe 80% right. A couple of corrections and it's done.
 
 **Why does a Chrome extension work when a Python script doesn't?**
 
-Auth. A Python script has to replicate your browser session from outside — grabbing cookies, passing tokens — and it breaks every time something changes. Session expires, auth flow shifts, rate limit gets added. You spend more time maintaining the workaround than you saved building it. A Chrome extension runs inside your existing session. You're already logged in. It just reads what's there.
+Auth. A Python script has to replicate your browser session from outside, grabbing cookies, passing tokens, and it breaks every time something changes. Session expires, auth flow shifts, rate limit gets added. You spend more time maintaining the workaround than you saved building it. A Chrome extension runs inside your existing session. You're already logged in. It just reads what's there.
 
 **How do you pull data from a dashboard with no API?**
 
@@ -144,6 +147,8 @@ Claude Code is what I use when I want to describe the full problem and get somet
 
 Something you do manually every single day. Copying numbers off a page, filling the same form, checking the same value. The more repetitive and boring it is, the better the first one to build. The break-even is usually two days.
 
+</details>
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -154,7 +159,7 @@ Something you do manually every single day. Copying numbers off a page, filling 
       "name": "Can you build a Chrome extension without knowing how to code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Describe what's on the page, what you want, and what should happen with the data. Claude Code or Cursor handles the manifest, content scripts, everything. Right-click any element, hit Inspect, grab the class name — that's the hardest technical step. First version is maybe 80% right. A couple of corrections and it's done."
+        "text": "Yes. Describe what's on the page, what you want, and what should happen with the data. Claude Code or Cursor handles the manifest, content scripts, everything. Right-click any element, hit Inspect, grab the class name. That's the hardest technical step. First version is maybe 80% right. A couple of corrections and it's done."
       }
     },
     {
@@ -162,7 +167,7 @@ Something you do manually every single day. Copying numbers off a page, filling 
       "name": "Why does a Chrome extension work when a Python script doesn't?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Auth. A Python script has to replicate your browser session from outside — grabbing cookies, passing tokens — and it breaks every time something changes. Session expires, auth flow shifts, rate limit gets added. You spend more time maintaining the workaround than you saved building it. A Chrome extension runs inside your existing session. You're already logged in. It just reads what's there."
+        "text": "Auth. A Python script has to replicate your browser session from outside, grabbing cookies, passing tokens, and it breaks every time something changes. Session expires, auth flow shifts, rate limit gets added. You spend more time maintaining the workaround than you saved building it. A Chrome extension runs inside your existing session. You're already logged in. It just reads what's there."
       }
     },
     {
