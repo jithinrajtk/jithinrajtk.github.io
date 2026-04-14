@@ -9,6 +9,7 @@ description: "How to automate a daily lead generation performance report — pul
 seo_title: "How to Automate a Daily Lead Performance Report (No Data Team Needed)"
 image: /assets/images/okr-email-header.png
 keywords: [automate daily lead report, OKR reporting automation, lead performance report, automated sales report, daily OKR status email, lead run rate tracking, reporting without data team]
+permalink: /writing/automate-daily-lead-performance-report/
 ---
 
 Picture the scene.
@@ -129,7 +130,7 @@ The most useful format: overall status at a glance (how many categories are on t
 
 ---
 
-*If you're solving similar operational problems: I also built a [Chrome extension to pull data from dashboards with no API](/writing/if-i-can-see-it-on-the-screen-i-can-get-it-out/) and an [Instagram story monitoring dashboard](/writing/i-was-monitoring-25-instagram-pages-i-was-just-wasting-time/) — both built the same way, no engineering team involved.*
+*If you're solving similar operational problems: I also built a [Chrome extension to pull data from dashboards with no API](/writing/build-chrome-extension-without-coding/) and an [Instagram story monitoring dashboard](/writing/monitor-instagram-stories-multiple-accounts/) — both built the same way, no engineering team involved.*
 
 <script type="application/ld+json">
 {

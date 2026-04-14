@@ -26,7 +26,11 @@ layout: default
   },
   "url": "{{ page.url | absolute_url }}",
   "mainEntityOfPage": "{{ page.url | absolute_url }}",
-  "wordCount": {{ content | number_of_words }}
+  "wordCount": {{ content | number_of_words }}{% if page.image %},
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://jithinraaj.in{{ page.image }}"
+  }{% endif %}
 }
 </script>
 

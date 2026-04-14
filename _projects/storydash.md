@@ -33,4 +33,4 @@ Claude Code. From problem to working internal tool without a dedicated engineeri
 
 ---
 
-Read the full writeup: [I Was "Monitoring" 25+ Instagram Pages. I Was Just Wasting Time.](/writing/storydash-monitoring-instagram-pages/)
+Read the full writeup: [I Was "Monitoring" 25+ Instagram Pages. I Was Just Wasting Time.](/writing/monitor-instagram-stories-multiple-accounts/)

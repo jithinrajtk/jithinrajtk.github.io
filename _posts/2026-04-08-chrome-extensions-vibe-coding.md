@@ -8,6 +8,7 @@ description: "How I build custom Chrome extensions using vibe coding tools like 
 image: /assets/images/chrome-extension-vibe-coding.png
 seo_title: "How to Build a Chrome Extension Without Coding (Vibe Coding with Claude Code)"
 keywords: [build chrome extension without coding, vibe coding chrome extension, chrome extension no code, extract data from dashboard no API, automate browser tasks, Claude Code chrome extension, Cursor chrome extension]
+permalink: /writing/build-chrome-extension-without-coding/
 last_modified_at: 2026-04-09
 ---
 
@@ -115,7 +116,7 @@ The extension does the rest.
 
 ---
 
-*This is part of how I approach operational problems in general — same method I used to build a [daily OKR lead performance report](/writing/every-morning-the-report-already-knows-what-needs-fixing/) and an [Instagram story monitoring dashboard](/writing/i-was-monitoring-25-instagram-pages-i-was-just-wasting-time/). Clear problem, clear output, iterate.*
+*This is part of how I approach operational problems in general — same method I used to build a [daily OKR lead performance report](/writing/automate-daily-lead-performance-report/) and an [Instagram story monitoring dashboard](/writing/monitor-instagram-stories-multiple-accounts/). Clear problem, clear output, iterate.*
 
 ---
 
