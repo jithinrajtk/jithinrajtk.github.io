@@ -7,7 +7,7 @@ description: "Jithin Raaj is Head of Social at Entri with 8 years of experience 
 keywords: [Jithin Raaj, Head of Social Entri, social media team lead, automation expert, social media operations, Kochi, internal tools, vibe coding]
 ---
 
-Kochi-based. Head of Social at Entri.
+Heading Social Media at [Entri](https://entri.app).
 
 Eight years building the social operation from scratch — YouTube, Instagram, and Facebook across 5 languages. Joined when the company was 13 people. The team is 42 now.
 
