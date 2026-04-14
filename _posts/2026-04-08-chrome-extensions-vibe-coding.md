@@ -116,17 +116,17 @@ The extension does the rest.
 
 ---
 
-*This is part of how I approach operational problems in general — same method I used to build a [daily OKR lead performance report](/writing/automate-daily-lead-performance-report/) and an [Instagram story monitoring dashboard](/writing/monitor-instagram-stories-multiple-accounts/). Clear problem, clear output, iterate.*
+*Same pattern — [automated the daily OKR lead report](/writing/automate-daily-lead-performance-report/) that sends before anyone asks for it, and built an [Instagram story monitoring dashboard](/writing/monitor-instagram-stories-multiple-accounts/) that catches spacing violations I never knew were happening. Different problems, same approach.*
 
 ---
 
 **Can you build a Chrome extension without knowing how to code?**
 
-Yes. With vibe coding tools like Claude Code or Cursor, you describe the page, the data you want, and what should happen with it. The tool generates the manifest, content scripts, and permissions. You don't need to understand the structure — just describe what's on the page (right-click any element, hit Inspect, copy the class name) and what you want done with it. The first version gets about 80% right. Two or three corrections and it's done. No JavaScript knowledge required.
+Yes. Describe what's on the page, what you want, and what should happen with the data. Claude Code or Cursor handles the manifest, content scripts, everything. Right-click any element, hit Inspect, grab the class name — that's the hardest technical step. First version is maybe 80% right. A couple of corrections and it's done.
 
 **Why does a Chrome extension work when a Python script doesn't?**
 
-Auth. A Python script has to replicate your browser session from outside — grabbing cookies manually, passing session tokens into requests. It works once, then breaks when the session expires, the auth flow changes, or a rate limit gets added. You end up spending more time maintaining the workaround than you ever saved building it. A Chrome extension runs inside your existing browser session. You're already logged in. It just reads what's on the page — no tokens to replicate, no auth to reverse-engineer.
+Auth. A Python script has to replicate your browser session from outside — grabbing cookies, passing tokens — and it breaks every time something changes. Session expires, auth flow shifts, rate limit gets added. You spend more time maintaining the workaround than you saved building it. A Chrome extension runs inside your existing session. You're already logged in. It just reads what's there.
 
 **How do you pull data from a dashboard with no API?**
 
@@ -134,15 +134,15 @@ Build a Chrome extension. It runs inside your browser session, so it can access 
 
 **What is vibe coding?**
 
-Building software by describing what you want in plain language to an AI tool like Claude Code or Cursor, then iterating on what it produces without writing code yourself. The name comes from Andrej Karpathy. The key skill isn't coding — it's describing the problem precisely: the URL, the exact element, what you want done with the data. Vague in, broken out. Specific in, working tool out.
+Describing what you want to an AI tool and iterating on what it builds, without writing code yourself. The term came from Andrej Karpathy. The actual skill isn't coding — it's describing the problem well. The more precise you are about the page, the element, the output you need, the better the first version. Vague in, broken out.
 
 **What is the difference between Claude Code and Cursor for building Chrome extensions?**
 
-Claude Code is terminal-first — great for describing the full problem in one go and getting something fast without opening a code editor. Cursor is an AI-powered editor, better when you want to read through the generated files and make manual tweaks yourself. Both work for building Chrome extensions with vibe coding. If you want speed and don't care about reading the code, use Claude Code. If you want to understand what was built and adjust it, use Cursor.
+Claude Code is what I use when I want to describe the full problem and get something fast. Cursor is better when I want to read through what it built and make my own tweaks. Both work. If you want speed, Claude Code. If you want to understand what was built, Cursor. Either way, just start.
 
 **What's the best first extension to build?**
 
-Start with something you do manually every day — copying numbers off a page, filling the same form, checking the same thing. Pick something with a clear input and a clear output. Describe it with the exact element class names from the page and iterate from there. The break-even on time saved vs time spent is usually two days.
+Something you do manually every single day. Copying numbers off a page, filling the same form, checking the same value. The more repetitive and boring it is, the better the first one to build. The break-even is usually two days.
 
 <script type="application/ld+json">
 {
@@ -154,7 +154,7 @@ Start with something you do manually every day — copying numbers off a page, f
       "name": "Can you build a Chrome extension without knowing how to code?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. With vibe coding tools like Claude Code or Cursor, you describe the page, the data you want, and what should happen with it. The tool generates the manifest, content scripts, and permissions. You don't need to understand the structure — just describe what's on the page (right-click any element, hit Inspect, copy the class name) and what you want done with it. The first version gets about 80% right. Two or three corrections and it's done. No JavaScript knowledge required."
+        "text": "Yes. Describe what's on the page, what you want, and what should happen with the data. Claude Code or Cursor handles the manifest, content scripts, everything. Right-click any element, hit Inspect, grab the class name — that's the hardest technical step. First version is maybe 80% right. A couple of corrections and it's done."
       }
     },
     {
@@ -162,7 +162,7 @@ Start with something you do manually every day — copying numbers off a page, f
       "name": "Why does a Chrome extension work when a Python script doesn't?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Auth. A Python script has to replicate your browser session from outside — grabbing cookies manually, passing session tokens into requests. It works once, then breaks when the session expires, the auth flow changes, or a rate limit gets added. A Chrome extension runs inside your existing browser session. You're already logged in. It just reads what's on the page — no tokens to replicate, no auth to reverse-engineer."
+        "text": "Auth. A Python script has to replicate your browser session from outside — grabbing cookies, passing tokens — and it breaks every time something changes. Session expires, auth flow shifts, rate limit gets added. You spend more time maintaining the workaround than you saved building it. A Chrome extension runs inside your existing session. You're already logged in. It just reads what's there."
       }
     },
     {
@@ -178,7 +178,7 @@ Start with something you do manually every day — copying numbers off a page, f
       "name": "What is vibe coding?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Building software by describing what you want in plain language to an AI tool like Claude Code or Cursor, then iterating on what it produces without writing code yourself. The name comes from Andrej Karpathy. The key skill isn't coding — it's describing the problem precisely: the URL, the exact element, what you want done with the data. Vague in, broken out. Specific in, working tool out."
+        "text": "Describing what you want to an AI tool and iterating on what it builds, without writing code yourself. The term came from Andrej Karpathy. The actual skill isn't coding — it's describing the problem well. The more precise you are about the page, the element, the output you need, the better the first version. Vague in, broken out."
       }
     },
     {
@@ -186,7 +186,7 @@ Start with something you do manually every day — copying numbers off a page, f
       "name": "What is the difference between Claude Code and Cursor for building Chrome extensions?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Claude Code is terminal-first — great for describing the full problem in one go and getting something fast without opening a code editor. Cursor is an AI-powered editor, better when you want to read through the generated files and make manual tweaks yourself. Both work for building Chrome extensions with vibe coding. If you want speed and don't care about reading the code, use Claude Code. If you want to understand what was built and adjust it, use Cursor."
+        "text": "Claude Code is what I use when I want to describe the full problem and get something fast. Cursor is better when I want to read through what it built and make my own tweaks. Both work. If you want speed, Claude Code. If you want to understand what was built, Cursor. Either way, just start."
       }
     },
     {
@@ -194,7 +194,7 @@ Start with something you do manually every day — copying numbers off a page, f
       "name": "What is the best first Chrome extension to build with vibe coding?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Start with something you do manually every day — copying numbers off a page, filling the same form, checking the same thing. Pick something with a clear input and a clear output. Describe it with the exact element class names from the page and iterate from there. The break-even on time saved vs time spent is usually two days."
+        "text": "Something you do manually every single day. Copying numbers off a page, filling the same form, checking the same value. The more repetitive and boring it is, the better the first one to build. The break-even is usually two days."
       }
     }
   ]

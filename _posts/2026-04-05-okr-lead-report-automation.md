@@ -105,8 +105,6 @@ That's the only gap that actually mattered.
 
 ---
 
----
-
 **Why not just fix the dashboard to update in real time?**
 That would solve the data freshness problem but not the processing problem. Someone still has to open it, read it, calculate the gaps, identify who's behind, and summarise for the team. The bottleneck isn't the dashboard — it's the manual steps between data and decision.
 
@@ -114,23 +112,23 @@ That would solve the data freshness problem but not the processing problem. Some
 The system maps every category to its owner. When something is flagged, the name is right there — no cross-referencing, no asking around. The value isn't just knowing what's broken. It's knowing who to talk to about it before the meeting starts.
 
 **Can you build internal reporting tools without a data or engineering team?**
-Yes — if you can clearly describe what you want the output to look like and what logic should drive it. The hard part was never writing the code. It was thinking through the rules: what counts as "behind", how to calculate a projection, what order things should surface in. Once that thinking is done, the rest follows.
+Yes. The hard part was never the code. It was thinking through the rules — what counts as behind, how to project a finish, what order to surface things. Once you've worked that out, describing it to Claude Code takes ten minutes.
 
 **How do you automate a daily performance report for a sales or lead generation team?**
-Define the output first: what does the team need to know, in what order, before the first meeting of the day. Then build logic that pulls data, calculates each category's position against its expected daily run rate, ranks by gap, and sends the result on a schedule. The key is making the report arrive before anyone needs to ask for it — not on demand, but automatic.
+Start with the output, not the build. What does the team need to know, and when? Write it out like you're briefing someone. Then build logic that produces exactly that — pulls the data, calculates, ranks by urgency, sends on a schedule. The report should arrive before anyone thinks to ask for it. Anything less isn't finished.
 
 **What is a lead run rate and how do you calculate it?**
-Run rate is how many leads a category needs to generate per day to hit its monthly target. If the monthly target is 300 and the month has 30 days, the daily run rate is 10. On Day 15, the expected total is 150. If the category has only reached 100, it's at 67% of expected pace — behind. Projecting forward: at 100 leads in 15 days, it will finish at 200 out of 300 — 67% of target. That projected finish number is what makes teams act.
+Run rate is the daily pace a category needs to hit its monthly target. Target is 300, month has 30 days — run rate is 10 per day. On Day 15, you expect 150. If you're at 100, you're at 67% of pace. At that rate you'll finish at 67% of target. That projected finish number is what makes people actually do something about it.
 
 **How do you replace manual pre-meeting calculations with automation?**
-Identify what someone is calculating manually before each meeting. Write down the exact logic — what data they pull, what formula they apply, what order they present it in. Then build a script that does the same calculation on a schedule and delivers the output before the meeting starts. The goal isn't a better dashboard. It's removing the human step between data existing and the team being ready to use it.
+Watch what someone does before the meeting. What do they open, what do they calculate, what order do they walk through it? Write that down. Then build something that does exactly that on a schedule and sends it before anyone has to ask. The goal isn't a better dashboard. It's closing the gap between data existing and the team being ready to act on it.
 
 **What should a daily OKR status email include?**
 The most useful format: overall status at a glance (how many categories are on track vs behind), then a ranked list of categories that need attention — sorted by urgency, not alphabetically. Each entry should show the category name, the owner, the current achievement percentage, and the projected month-end finish if nothing changes. That last number — the projection — is what drives decisions. Everything else is context.
 
 ---
 
-*If you're solving similar operational problems: I also built a [Chrome extension to pull data from dashboards with no API](/writing/build-chrome-extension-without-coding/) and an [Instagram story monitoring dashboard](/writing/monitor-instagram-stories-multiple-accounts/) — both built the same way, no engineering team involved.*
+*Same approach, different problems — [Chrome extensions that pull data from locked dashboards](/writing/build-chrome-extension-without-coding/) and an [Instagram story monitoring system](/writing/monitor-instagram-stories-multiple-accounts/) that runs without anyone checking it.*
 
 <script type="application/ld+json">
 {
@@ -158,7 +156,7 @@ The most useful format: overall status at a glance (how many categories are on t
       "name": "Can you build internal reporting tools without a data or engineering team?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes — if you can clearly describe what you want the output to look like and what logic should drive it. The hard part was never writing the code. It was thinking through the rules: what counts as behind, how to calculate a projection, what order things should surface in. Once that thinking is done, the rest follows."
+        "text": "Yes. The hard part was never the code. It was thinking through the rules — what counts as behind, how to project a finish, what order to surface things. Once you've worked that out, describing it to Claude Code takes ten minutes."
       }
     },
     {
@@ -166,7 +164,7 @@ The most useful format: overall status at a glance (how many categories are on t
       "name": "How do you automate a daily performance report for a sales or lead generation team?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Define the output first: what does the team need to know, in what order, before the first meeting of the day. Then build logic that pulls data, calculates each category's position against its expected daily run rate, ranks by gap, and sends the result on a schedule. The key is making the report arrive before anyone needs to ask for it — not on demand, but automatic."
+        "text": "Start with the output, not the build. What does the team need to know, and when? Write it out like you're briefing someone. Then build logic that produces exactly that — pulls the data, calculates, ranks by urgency, sends on a schedule. The report should arrive before anyone thinks to ask for it. Anything less isn't finished."
       }
     },
     {
@@ -174,7 +172,7 @@ The most useful format: overall status at a glance (how many categories are on t
       "name": "What is a lead run rate and how do you calculate it?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Run rate is how many leads a category needs to generate per day to hit its monthly target. If the monthly target is 300 and the month has 30 days, the daily run rate is 10. On Day 15, the expected total is 150. If the category has only reached 100, it's at 67% of expected pace — behind. Projecting forward: at 100 leads in 15 days, it will finish at 200 out of 300 — 67% of target. That projected finish number is what makes teams act."
+        "text": "Run rate is the daily pace a category needs to hit its monthly target. Target is 300, month has 30 days — run rate is 10 per day. On Day 15, you expect 150. If you're at 100, you're at 67% of pace. At that rate you'll finish at 67% of target. That projected finish number is what makes people actually do something about it."
       }
     },
     {
@@ -182,7 +180,7 @@ The most useful format: overall status at a glance (how many categories are on t
       "name": "How do you replace manual pre-meeting calculations with automation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Identify what someone is calculating manually before each meeting. Write down the exact logic — what data they pull, what formula they apply, what order they present it in. Then build a script that does the same calculation on a schedule and delivers the output before the meeting starts. The goal isn't a better dashboard. It's removing the human step between data existing and the team being ready to use it."
+        "text": "Watch what someone does before the meeting. What do they open, what do they calculate, what order do they walk through it? Write that down. Then build something that does exactly that on a schedule and sends it before anyone has to ask. The goal isn't a better dashboard. It's closing the gap between data existing and the team being ready to act on it."
       }
     },
     {
