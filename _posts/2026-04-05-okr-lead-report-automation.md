@@ -105,7 +105,7 @@ That's the only gap that actually mattered.
 
 ---
 
-<details>
+<details markdown="1">
 <summary>Common questions</summary>
 
 **Why not just fix the dashboard to update in real time?**

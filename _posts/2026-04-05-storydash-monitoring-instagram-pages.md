@@ -112,7 +112,7 @@ Miss any one of those and someone's still doing something by hand every day. Tha
 
 ---
 
-<details>
+<details markdown="1">
 <summary>Common questions</summary>
 
 **Does posting Instagram stories too close together hurt reach?**

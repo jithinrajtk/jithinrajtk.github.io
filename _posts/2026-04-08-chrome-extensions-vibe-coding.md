@@ -120,7 +120,7 @@ The extension does the rest.
 
 ---
 
-<details>
+<details markdown="1">
 <summary>Common questions</summary>
 
 **Can you build a Chrome extension without knowing how to code?**

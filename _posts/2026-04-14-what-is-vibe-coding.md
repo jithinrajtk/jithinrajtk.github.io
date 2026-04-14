@@ -87,11 +87,11 @@ That's the whole thing.
 
 ---
 
-*These aren't just ideas — [StoryDash](/projects/storydash/) is running in production, the [OKR report](/writing/automate-daily-lead-performance-report/) lands every morning, and the [Chrome extensions](/writing/build-chrome-extension-without-coding/) are in the browser right now.*
+*These aren't just ideas. [StoryDash](/projects/storydash/) is running in production, the [OKR report](/writing/automate-daily-lead-performance-report/) lands every morning, and the [Chrome extensions](/writing/build-chrome-extension-without-coding/) are in the browser right now.*
 
 ---
 
-<details>
+<details markdown="1">
 <summary>Common questions</summary>
 
 **What is vibe coding?**
