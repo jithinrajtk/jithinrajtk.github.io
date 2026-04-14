@@ -55,9 +55,9 @@ I've lost count of how many hours went into this kind of work. Not just me. Ever
 
 The fix isn't asking the data team for a new report. The fix is building exactly what you need in an afternoon.
 
-![Cursor showing the Leads vs Activity tool — day-wise lead and activity data, one click](/assets/images/cursor-coding-window.png)
+![Cursor open with the Leads vs Activity project](/assets/images/cursor-coding-window.png)
 
-That's the Leads vs Activity tool. Day-wise lead data and activity data, pulled and combined in one view. What used to be a 30-40 minute daily task.
+That's Cursor with the Leads vs Activity project open. Built here, runs elsewhere. The 30-40 minute daily task now happens in the background.
 
 ---
 
@@ -77,11 +77,11 @@ Cursor and Claude Code. I use both, though the balance has shifted.
 
 Cursor is an editor. You can see the files, read what's being built, make changes yourself. It has an agent mode where you describe what you want and watch it work through the problem step by step.
 
-![Cursor agent mode — describe the problem, watch it build](/assets/images/cursor-agent-window.png)
+![Cursor agent mode, projects list with recent builds](/assets/images/cursor-agent-window.png)
 
 Claude Code is a terminal. You describe the problem, it builds, you describe what's wrong, it fixes. Less visual, faster end to end.
 
-![Claude Code — daily driver for most builds now](/assets/images/claude-code-terminal.png)
+![Claude Code terminal, daily driver for most builds now](/assets/images/claude-code-terminal.png)
 
 I used to use Cursor more. Now I'm mostly on Claude Code. The reason is simple: I don't need to see the code anymore. I need the thing to work.
 
