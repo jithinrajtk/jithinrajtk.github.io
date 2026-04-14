@@ -75,15 +75,15 @@ Some broke. Some needed three rounds of back and forth to get right. None of tha
 
 Cursor and Claude Code. I use both, though the balance has shifted.
 
-Cursor is an editor. You can see the files, read what's being built, make changes yourself. It has an agent mode where you describe what you want and watch it work through the problem step by step.
+Cursor keeps everything visible. Good when you want to stay close to what's being built.
 
 ![Cursor agent mode, projects list with recent builds](/assets/images/cursor-agent-window.png)
 
-Claude Code is a terminal. You describe the problem, it builds, you describe what's wrong, it fixes. Less visual, faster end to end.
+Claude Code is just a terminal. Faster. Less to look at.
 
 ![Claude Code terminal, daily driver for most builds now](/assets/images/claude-code-terminal.png)
 
-I used to use Cursor more. Now I'm mostly on Claude Code. The reason is simple: I don't need to see the code anymore. I need the thing to work.
+I used to use Cursor more. Now I'm mostly on Claude Code. Once you stop caring about the code itself, the terminal makes more sense.
 
 ---
 
