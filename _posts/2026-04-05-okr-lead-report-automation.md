@@ -3,8 +3,12 @@ layout: post
 title: "Every Morning, the Report Already Knows What Needs Fixing"
 subtitle: "How I built an automated lead performance report that replaced manual pre-meeting calculation with an email that arrives before anyone opens a laptop."
 date: 2026-04-05
+last_modified_at: 2026-04-14
 tags: [automation, okr, internal-tools, claude-code, data, social-media, lead-generation, reporting-automation, daily-report, performance-tracking]
 description: "How to automate a daily lead generation performance report — pulling OKR data, calculating run rates, ranking categories by urgency, and delivering a briefing email before the first meeting. Built without a data or engineering team."
+seo_title: "How to Automate a Daily Lead Performance Report (No Data Team Needed)"
+image: /assets/images/okr-email-header.png
+keywords: [automate daily lead report, OKR reporting automation, lead performance report, automated sales report, daily OKR status email, lead run rate tracking, reporting without data team]
 ---
 
 Picture the scene.
@@ -122,3 +126,72 @@ Identify what someone is calculating manually before each meeting. Write down th
 
 **What should a daily OKR status email include?**
 The most useful format: overall status at a glance (how many categories are on track vs behind), then a ranked list of categories that need attention — sorted by urgency, not alphabetically. Each entry should show the category name, the owner, the current achievement percentage, and the projected month-end finish if nothing changes. That last number — the projection — is what drives decisions. Everything else is context.
+
+---
+
+*If you're solving similar operational problems: I also built a [Chrome extension to pull data from dashboards with no API](/writing/if-i-can-see-it-on-the-screen-i-can-get-it-out/) and an [Instagram story monitoring dashboard](/writing/i-was-monitoring-25-instagram-pages-i-was-just-wasting-time/) — both built the same way, no engineering team involved.*
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why not just fix the dashboard to update in real time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "That would solve the data freshness problem but not the processing problem. Someone still has to open it, read it, calculate the gaps, identify who's behind, and summarise for the team. The bottleneck isn't the dashboard — it's the manual steps between data and decision."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you handle multiple POCs across different categories?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The system maps every category to its owner. When something is flagged, the name is right there — no cross-referencing, no asking around. The value isn't just knowing what's broken. It's knowing who to talk to about it before the meeting starts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you build internal reporting tools without a data or engineering team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — if you can clearly describe what you want the output to look like and what logic should drive it. The hard part was never writing the code. It was thinking through the rules: what counts as behind, how to calculate a projection, what order things should surface in. Once that thinking is done, the rest follows."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you automate a daily performance report for a sales or lead generation team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Define the output first: what does the team need to know, in what order, before the first meeting of the day. Then build logic that pulls data, calculates each category's position against its expected daily run rate, ranks by gap, and sends the result on a schedule. The key is making the report arrive before anyone needs to ask for it — not on demand, but automatic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a lead run rate and how do you calculate it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Run rate is how many leads a category needs to generate per day to hit its monthly target. If the monthly target is 300 and the month has 30 days, the daily run rate is 10. On Day 15, the expected total is 150. If the category has only reached 100, it's at 67% of expected pace — behind. Projecting forward: at 100 leads in 15 days, it will finish at 200 out of 300 — 67% of target. That projected finish number is what makes teams act."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do you replace manual pre-meeting calculations with automation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Identify what someone is calculating manually before each meeting. Write down the exact logic — what data they pull, what formula they apply, what order they present it in. Then build a script that does the same calculation on a schedule and delivers the output before the meeting starts. The goal isn't a better dashboard. It's removing the human step between data existing and the team being ready to use it."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should a daily OKR status email include?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The most useful format: overall status at a glance (how many categories are on track vs behind), then a ranked list of categories that need attention — sorted by urgency, not alphabetically. Each entry should show the category name, the owner, the current achievement percentage, and the projected month-end finish if nothing changes. That last number — the projection — is what drives decisions. Everything else is context."
+      }
+    }
+  ]
+}
+</script>

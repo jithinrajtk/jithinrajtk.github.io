@@ -6,7 +6,8 @@ date: 2026-04-05
 tags: [instagram, automation, claude-code, social-media, internal-tools, content-operations, instagram-monitoring, story-tracking, multiple-pages, social-media-dashboard]
 description: "How to monitor Instagram stories across 25+ pages without opening the app — a custom dashboard with story spacing violation alerts, per-page tracking, and automated hourly email reports. Built with Claude Code without an engineering team."
 image: /assets/images/storydash-overview.png
-seo_title: "How to Monitor Instagram Stories Across Multiple Accounts (Dashboard + Email Alerts)"
+seo_title: "How to Monitor Instagram Stories Across 25+ Accounts (With Spacing Alerts)"
+keywords: [monitor Instagram stories multiple accounts, Instagram story monitoring dashboard, Instagram story spacing, manage multiple Instagram pages, Instagram story alerts, social media monitoring tool]
 last_modified_at: 2026-04-08
 ---
 
@@ -93,6 +94,8 @@ Three features. One clear problem statement each time. The whole thing went from
 I manage content operations. Building tools is not a skill I have. That's the point.
 
 *Running in production.* Full project overview: [StoryDash →](/projects/storydash/)
+
+*Building internal tools without engineers is a pattern I use across different problems — I also automated a [daily OKR lead performance report](/writing/every-morning-the-report-already-knows-what-needs-fixing/) and built [Chrome extensions to extract data from dashboards with no API](/writing/if-i-can-see-it-on-the-screen-i-can-get-it-out/).*
 
 ---
 

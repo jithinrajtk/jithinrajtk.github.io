@@ -27,7 +27,7 @@
   <title>{% if seo_title != 'Jithin Raaj' %}{{ seo_title }} — {{ site_name }}{% else %}{{ site_name }} - Social Media Team Lead & Automation Expert{% endif %}</title>
   <meta name="title" content="{% if seo_title != 'Jithin Raaj' %}{{ seo_title }} — {{ site_name }}{% else %}{{ site_name }} - Social Media Team Lead & Automation Expert{% endif %}" />
   <meta name="description" content="{{ page_description }}" />
-  <meta name="keywords" content="Jithin Raaj, Social Media Lead, Automation Expert, AI Solutions, Social Media Marketing, Problem Solving, Team Lead, Entri" />
+  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords | join: ', ' }}{% else %}Jithin Raaj, Social Media Lead, Automation Expert, AI Solutions, Social Media Marketing, Problem Solving, Team Lead, Entri{% endif %}" />
   <meta name="author" content="Jithin Raaj" />
 
   <!-- Open Graph / Facebook -->
@@ -61,28 +61,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 
   <!-- Structured Data -->
-  {% if page.layout == 'post' %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": {{ page.title | jsonify }},
-    "description": {{ page_description | jsonify }},
-    "url": "{{ canonical_url }}",
-    "datePublished": "{{ page.date | date_to_xmlschema }}",
-    "author": {
-      "@type": "Person",
-      "name": "Jithin Raaj",
-      "url": "https://jithinraaj.in"
-    },
-    "publisher": {
-      "@type": "Person",
-      "name": "Jithin Raaj",
-      "url": "https://jithinraaj.in"
-    }
-  }
-  </script>
-  {% else %}
+  {% unless page.layout == 'post' %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -103,7 +82,7 @@
     ]
   }
   </script>
-  {% endif %}
+  {% endunless %}
 
   {% feed_meta %}
 
