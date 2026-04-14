@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Every Problem I Hit Now Has a Technical Solution"
-subtitle: "What vibe coding means when you run operations, not engineering — and why that distinction stopped mattering."
+subtitle: "What vibe coding means when you run operations, not engineering. And why that distinction stopped mattering."
 date: 2026-04-14
 last_modified_at: 2026-04-15
 tags: [vibe-coding, automation, claude-code, cursor, internal-tools, productivity, social-media, operations, no-code]
