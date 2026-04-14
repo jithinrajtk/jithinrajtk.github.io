@@ -21,7 +21,9 @@ Still figuring out what all of this adds up to. But the direction feels right.
 
 ---
 
-**Writing** — I document the tools I build and the problems they solve: [automated OKR lead reports](/writing/automate-daily-lead-performance-report/), [Instagram story monitoring at scale](/writing/monitor-instagram-stories-multiple-accounts/), and [Chrome extensions via vibe coding](/writing/build-chrome-extension-without-coding/).
+**Writing** — I document the tools I build and the problems they solve: [what vibe coding means for non-developers](/writing/what-is-vibe-coding/), [automated OKR lead reports](/writing/automate-daily-lead-performance-report/), [Instagram story monitoring at scale](/writing/monitor-instagram-stories-multiple-accounts/), and [Chrome extensions via vibe coding](/writing/build-chrome-extension-without-coding/).
+
+**Reading and watching** — I track [books](/books/) and [films](/movies/) that stay with me.
 
 ---
 

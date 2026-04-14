@@ -110,6 +110,8 @@ One data source pulling from all pages. One screen where everything is visible a
 
 Miss any one of those and someone's still doing something by hand every day. That's how you know it's not finished.
 
+**More on this:** [Automate a Daily Lead Performance Report](/writing/automate-daily-lead-performance-report/) · [Build Chrome Extensions Without Coding](/writing/build-chrome-extension-without-coding/) · [What Vibe Coding Means for Non-Developers](/writing/what-is-vibe-coding/)
+
 ---
 
 <details markdown="1">

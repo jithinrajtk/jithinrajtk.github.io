@@ -1,6 +1,9 @@
 ---
 layout: page
 title: Now
+seo_title: "Now — What Jithin Raaj Is Working On"
+description: "What I'm currently building, thinking about, and focused on. Updated April 2026 from Kochi, India."
+keywords: [Jithin Raaj now, social media automation, building with Claude Code, internal tools]
 permalink: /now/
 ---
 

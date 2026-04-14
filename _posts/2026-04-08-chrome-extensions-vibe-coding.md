@@ -118,6 +118,8 @@ The extension does the rest.
 
 *Same pattern — [automated the daily OKR lead report](/writing/automate-daily-lead-performance-report/) that sends before anyone asks for it, and built an [Instagram story monitoring dashboard](/writing/monitor-instagram-stories-multiple-accounts/) that catches spacing violations I never knew were happening. Different problems, same approach.*
 
+**More on this:** [What Vibe Coding Means for Non-Developers](/writing/what-is-vibe-coding/) · [Automate a Daily Lead Performance Report](/writing/automate-daily-lead-performance-report/) · [Monitor Instagram Stories Across 25+ Pages](/writing/monitor-instagram-stories-multiple-accounts/)
+
 ---
 
 <details markdown="1">

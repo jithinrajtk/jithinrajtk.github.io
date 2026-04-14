@@ -105,6 +105,10 @@ That's the only gap that actually mattered.
 
 ---
 
+**More on this:** [Monitor Instagram Stories Across 25+ Pages](/writing/monitor-instagram-stories-multiple-accounts/) · [Build Chrome Extensions Without Coding](/writing/build-chrome-extension-without-coding/) · [What Vibe Coding Means for Non-Developers](/writing/what-is-vibe-coding/)
+
+---
+
 <details markdown="1">
 <summary>Common questions</summary>
 

@@ -119,6 +119,10 @@ That's the whole thing.
 
 ---
 
+**More on this:** [Build Chrome Extensions Without Coding](/writing/build-chrome-extension-without-coding/) · [Automate a Daily Lead Performance Report](/writing/automate-daily-lead-performance-report/) · [Monitor Instagram Stories Across 25+ Pages](/writing/monitor-instagram-stories-multiple-accounts/)
+
+---
+
 <details markdown="1">
 <summary>Common questions</summary>
 

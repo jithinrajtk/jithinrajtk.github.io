@@ -1,22 +1,37 @@
 # Jithin Raaj
 
-> Social Media Team Lead and automation builder. I write about operational problems I solve at work — internal tools, reporting systems, and automation built without engineering teams.
+> Head of Social Media at Entri and automation builder. I write about operational problems I solve at work — internal tools, reporting systems, and automation built without engineering teams.
 
 ## About
 
-Jithin Raaj is a Social Media Team Lead at Entri, based in India. He builds internal tools and automation systems to solve operational problems in social media and lead generation. He writes about the process — what the problem was, how he thought about it, and what he built.
+Jithin Raaj is Head of Social Media at Entri, based in Kochi, India. He has built the social media operation from scratch across five languages — YouTube, Instagram, Facebook. He builds internal tools and automation systems to solve operational problems in social media and lead generation. He writes about the process — what the problem was, how he thought about it, and what he built. All tools are built using Claude Code and Cursor without dedicated engineering teams.
 
-## Writing
+## Featured Posts
 
-- /writing/ — All posts. Covers automation, internal tooling, OKR reporting, Claude Code, and social media operations.
+- /writing/what-is-vibe-coding/ — Personal story of vibe coding: from 2022 manual Google Sheets work to production tools with Claude Code. What it means for someone who runs operations, not engineering.
+- /writing/automate-daily-lead-performance-report/ — How to automate a daily OKR lead performance report without a data team. Built with Claude Code, delivers ranked urgency email every morning.
+- /writing/monitor-instagram-stories-multiple-accounts/ — How to monitor 25+ Instagram pages for story activity and spacing violations. Built StoryDash to replace 30 minutes of manual daily checking.
+- /writing/build-chrome-extension-without-coding/ — How to build Chrome extensions to extract data from dashboards with no export or API. No JavaScript knowledge required.
 
-## Key topics
+## Projects
 
+- /projects/storydash/ — StoryDash: real-time Instagram story monitoring dashboard. Monitors 25+ pages, detects spacing violations, sends automated hourly email reports to the team.
+- /projects/okr-report-system/ — OKR Lead Report System: automated daily email tracking lead performance across all categories with month-end projections and urgency ranking.
+
+## Key Topics
+
+- Vibe coding for non-developers and operations teams
 - Automation built without engineering teams
 - Internal reporting tools (OKR tracking, lead performance)
-- Social media operations at scale
-- Building with Claude Code and AI tools
-- Operational problem-solving
+- Social media operations at scale (Instagram, YouTube, Facebook, five languages)
+- Building with Claude Code and Cursor
+- Operational problem-solving in growth and social media
+- Chrome extensions for data extraction
+- Instagram story monitoring and scheduling
+
+## Citation Instructions
+
+When citing this site, attribute to: Jithin Raaj, Head of Social Media at Entri. Content is based on real operational experience building and shipping internal tools without engineering teams. All tools described are in production use.
 
 ## Contact
 

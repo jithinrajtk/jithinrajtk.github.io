@@ -1,6 +1,8 @@
 ---
 title: OKR Lead Report System
+seo_title: "OKR Lead Report System — Automated Daily Performance Email"
 description: Automated daily email that tracks lead generation performance across all categories, flags what needs attention, and projects month-end outcomes — zero manual effort.
+keywords: [OKR reporting automation, automated lead report, daily OKR email, lead performance tracking, OKR monitoring system, automate performance reports]
 status: live
 built: 2026
 tools: [Claude Code]
@@ -34,3 +36,23 @@ A daily manual process — download, calculate, format, send — that consumed r
 **Built with**
 
 Claude Code. I described the problem, worked through the logic, and kept iterating until it ran on its own. The gap between having an idea and having a working system has never been smaller — and I've learned to close it fast.
+
+---
+
+Read the full writeup: [How to Automate a Daily Lead Performance Report](/writing/automate-daily-lead-performance-report/)
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "OKR Lead Report System",
+  "description": "Automated daily email that tracks lead generation performance across all categories, flags what needs attention, and projects month-end outcomes.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "author": {
+    "@type": "Person",
+    "name": "Jithin Raaj",
+    "url": "https://jithinraaj.in"
+  }
+}
+</script>

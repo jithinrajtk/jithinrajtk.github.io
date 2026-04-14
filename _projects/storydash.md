@@ -1,6 +1,8 @@
 ---
 title: StoryDash
+seo_title: "StoryDash — Instagram Story Monitoring Dashboard for 25+ Pages"
 description: Real-time Instagram story monitoring dashboard with automated hourly email reports. Built for managing 25+ pages at scale.
+keywords: [instagram story monitoring, monitor multiple instagram pages, instagram monitoring tool, story spacing algorithm, social media monitoring dashboard, instagram automation]
 status: live
 built: 2026
 tools: [Claude Code]
@@ -34,3 +36,19 @@ Claude Code. From problem to working internal tool without a dedicated engineeri
 ---
 
 Read the full writeup: [I Was "Monitoring" 25+ Instagram Pages. I Was Just Wasting Time.](/writing/monitor-instagram-stories-multiple-accounts/)
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "StoryDash",
+  "description": "Real-time Instagram story monitoring dashboard with automated hourly email reports for managing 25+ pages at scale.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "author": {
+    "@type": "Person",
+    "name": "Jithin Raaj",
+    "url": "https://jithinraaj.in"
+  }
+}
+</script>
