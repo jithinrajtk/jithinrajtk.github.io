@@ -57,8 +57,6 @@ The fix isn't asking the data team for a new report. The fix is building exactly
 
 ![Cursor open with the Leads vs Activity project](/assets/images/cursor-coding-window.png)
 
-That's Cursor with the Leads vs Activity project open. Built here, runs elsewhere. The 30-40 minute daily task now happens in the background.
-
 ---
 
 ## What came next
