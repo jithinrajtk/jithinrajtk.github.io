@@ -48,31 +48,29 @@ The comment section also finished with roughly 3.4 times more comments than we n
 
 ## Then we ran it on something much bigger
 
-A few months later we ran comment automation on a completely different type of post. An Entri reel offering followers a chance to win Google's swag kit. Google-branded merchandise, a real giveaway, the kind of thing that does not need much convincing in the caption.
+A few months later we ran it on a reel built around a giveaway. Entri had teamed up with Google for an event and the post was offering followers a chance to win Google-branded merchandise. The keyword was FREE.
 
-The keyword was FREE.
+![Entri reel offering Google swag kit — 1.3 million views](/assets/images/comment-automation-entri-reel.jpeg)
 
-That is a single generic word and I know what I said earlier about single keywords. But FREE was not incidental here. Every person watching that reel was watching specifically because they wanted the free kit. The word was the whole point of the post.
+1.3 million views. The post pulled people in on its own — we did not boost it.
 
-![Entri reel about winning Google's swag kit, showing 1.3 million views](/assets/images/comment-automation-entri-reel.jpeg)
+FREE is a single generic word and I know what I said earlier about single keywords. But it was not incidental here. Every person watching that reel was watching because they wanted the free kit. The word was the entire point of showing up in the comments.
 
-1.3 million views.
+I remember refreshing the comment count at some point during the day and just stopping. It kept moving faster than I expected.
 
-The comment section went immediately. People typing FREE, Free, free, and one person who typed Frre and still got the DM because ManyChat catches close enough matches.
+![Comment section flooding with people typing FREE, Free, Frre to trigger the automation](/assets/images/comment-automation-free-comments.jpeg)
 
-![Comment section showing people typing FREE to trigger the automation](/assets/images/comment-automation-free-comments.jpeg)
+Hundreds of people typing FREE, Free, free. One person typed Frre and still got the DM — ManyChat catches close matches. The automation was firing continuously.
 
-I remember refreshing the comments count at some point and just stopping. The number kept moving.
+Then I checked the full stats the next morning.
 
-![Reel stats: 135K comments, 32.8K likes, 39.1K shares, 8,198 saves](/assets/images/comment-automation-135k-stats.jpeg)
+![Reel stats showing 135K comments, 32.8K likes, 39.1K shares, 8,198 saves on the entri.coding account](/assets/images/comment-automation-135k-stats.jpeg)
 
-135,000 comments. 32,800 likes. 39,100 shares. 8,198 saves.
+135,000 comments. 32,800 likes. 39,100 shares. 8,198 saves. We picked up 20,000 followers that week.
 
-We picked up 20,000 followers that week.
+Every person who commented FREE got the DM immediately with the giveaway details and registration link. ManyChat sent tens of thousands of messages without anything breaking. Nobody on the team was manually working the comments. The only job was the inbox — which, more on that shortly, we handled badly.
 
-Every person who commented FREE got a DM with the giveaway details and the registration link, automatically, the moment they commented. ManyChat handled tens of thousands of triggers without anything breaking. Nobody on the team was manually responding to comments. The only job was watching the inbox for replies, which — more on that in a second — we also underestimated badly.
-
-I want to be honest about something: the reel going viral had nothing to do with the automation. The content did that. The automation's job was to not collapse under the volume, and to turn the attention into actual DM conversations before people scrolled on. It did both.
+The reel going that big had nothing to do with the automation. The content did that. The automation's job was to not fall apart under the volume and to turn that attention into DM conversations before people scrolled away. It held up.
 
 ---
 
