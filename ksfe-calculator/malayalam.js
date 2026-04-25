@@ -155,45 +155,49 @@ window.ML = {
   'footnote': 'ശ്രദ്ധിക്കുക: KSFE ഓരോ തവണയും 5% കമ്മീഷൻ കുറയ്ക്കും. നിങ്ങൾക്ക് ലഭിക്കുന്ന ഡിവിഡന്റ് (ലാഭവിഹിതം) നികുതിക്ക് വിധേയമാകാം.',
 
   // ── Results: initial verdict ──────────────────────────────────────────────
-  'verdict-initial': '',    // Fill in your details to see results
+  'verdict-initial': 'വിവരങ്ങൾ നൽകൂ, ഫലം ഉടൻ ലഭിക്കും',
 
   // ── Results: loss box ─────────────────────────────────────────────────────
-  'res-loss-label':    '',  // If you call this month
-  'res-loss-upfront':  '',  // one-time, upfront
-  'res-receive-label': '',  // You receive
-  'res-receive-note':  '',  // in hand, right away
-  'res-loss-suffix':   '',  // loss
-  'res-mo-suffix':     '',  // / mo
+  'res-loss-label':    'ഈ മാസം വിളിച്ചാൽ',
+  'res-loss-upfront':  'ഒറ്റത്തവണ, ഉടൻ',
+  'res-receive-label': 'ലഭിക്കുന്ന തുക',
+  'res-receive-note':  'കൈയ്യിൽ, ഉടൻ',
+  'res-loss-suffix':   'നഷ്ടം',
+  'res-mo-suffix':     '/ മാസം',
 
   // ── Results: comparison card ──────────────────────────────────────────────
-  'cmp-header':          '',  // Chitty call vs Personal Loan
-  'cmp-vs':              '',  // vs
-  'cmp-chitty-option':   '',  // Call Chitty
-  'cmp-loan-option':     '',  // Personal Loan
-  'cmp-lbl-receive':     '',  // You receive
-  'cmp-lbl-one-time':    '',  // One-time loss
-  'cmp-lbl-monthly-out': '',  // Monthly outgo
-  'cmp-lbl-rate':        '',  // Interest rate
-  'cmp-lbl-tenure':      '',  // Loan tenure
-  'cmp-lbl-interest':    '',  // Total interest
-  'cmp-lbl-emi':         '',  // Monthly EMI
-  'cmp-pct-yr':          '',  // % / yr
-  'cmp-months-unit':     '',  // months
+  'cmp-header':          'ചിട്ടി vs പേഴ്സണൽ ലോൺ',
+  'cmp-vs':              'vs',
+  'cmp-chitty-option':   'ചിട്ടി വിളിക്കുക',
+  'cmp-loan-option':     'പേഴ്സണൽ ലോൺ',
+  'cmp-lbl-receive':     'ലഭിക്കുന്നത്',
+  'cmp-lbl-one-time':    'ഒറ്റത്തവണ നഷ്ടം',
+  'cmp-lbl-monthly-out': 'പ്രതിമാസ ചിലവ്',
+  'cmp-lbl-rate':        'പലിശ നിരക്ക്',
+  'cmp-lbl-tenure':      'ലോൺ കാലാവധി',
+  'cmp-lbl-interest':    'മൊത്തം പലിശ',
+  'cmp-lbl-emi':         'പ്രതിമാസ EMI',
+  'cmp-pct-yr':          '% / വർഷം',
+  'cmp-months-unit':     'മാസം',
 
   // ── Results: zone strip ───────────────────────────────────────────────────
-  'zone-section-title': '',  // When to call — quick guide
-  'zone-you':           '',  // ◀ You
-  'zone-below':         '',  // Below
-  'zone-best-label':    '',  // Best time — low competition
-  'zone-ok-label':      '',  // Okay — moderate competition
-  'zone-wait-label':    '',  // Too competitive — better to wait
-  'zone-avoid-label':   '',  // Very high competition — avoid calling
-  'zone-best-badge':    '',  // Call now ✓
-  'zone-ok-badge':      '',  // Acceptable
-  'zone-wait-badge':    '',  // Wait
-  'zone-avoid-badge':   '',  // Don't call
+  'zone-section-title': 'എപ്പോൾ വിളിക്കണം — ഒരു ഗൈഡ്',
+  'zone-you':           '◀ നിങ്ങൾ',
+  'zone-below':         'താഴെ',
+  'zone-best-label':    'നല്ല സമയം — മത്സരം കുറവ്',
+  'zone-ok-label':      'ഏകദേശം ശരി — മിതമായ മത്സരം',
+  'zone-wait-label':    'മത്സരം കൂടുതൽ — കാത്തിരിക്കുക',
+  'zone-avoid-label':   'വളരെ കൂടിയ മത്സരം — വിളിക്കരുത്',
+  'zone-best-badge':    'ഇപ്പോൾ വിളിക്കൂ ✓',
+  'zone-ok-badge':      'ഏകദേശം ശരി',
+  'zone-wait-badge':    'കാത്തിരിക്കൂ',
+  'zone-avoid-badge':   'വിളിക്കരുത്',
 
   // ── SEO section toggle ────────────────────────────────────────────────────
-  'seo-toggle-label': '',    // About this calculator
+  'seo-toggle-label': 'ഈ കാൽക്കുലേറ്ററിനെക്കുറിച്ച്',
+
+  // ── Validation errors ─────────────────────────────────────────────────────
+  'err-lucky-count': 'നറുക്കെടുപ്പ് വിജയികൾ ആകെ വിജയികളേക്കാൾ കുറവായിരിക്കണം.',
+  'err-sms-high':    'SMS തുക (₹{sms}) പ്രതിമാസ ഗഡുവിനേക്കാൾ (₹{inst}) കൂടുതലാകരുത്.'
 
 };
