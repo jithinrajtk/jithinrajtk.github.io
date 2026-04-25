@@ -332,7 +332,7 @@
     <div class="verdict-card" id="verdict-bar">
       <div class="verdict-card-icon" id="verdict-dot">—</div>
       <div class="verdict-card-body">
-        <div class="verdict-card-title" id="verdict-text">Fill in your details to see results</div>
+        <div class="verdict-card-title" id="verdict-text" data-i18n="verdict-initial">Fill in your details to see results</div>
         <div class="verdict-card-sub" id="verdict-sub"></div>
       </div>
     </div>
@@ -343,68 +343,68 @@
     <!-- Loss box -->
     <div class="loss-box" id="loss-box" style="display:none">
       <div class="loss-col">
-        <div class="loss-lbl">If you call this month</div>
+        <div class="loss-lbl" data-i18n="res-loss-label">If you call this month</div>
         <div class="loss-amount" id="res-call-loss">—</div>
-        <div class="loss-note">one-time, upfront</div>
+        <div class="loss-note" data-i18n="res-loss-upfront">one-time, upfront</div>
       </div>
       <div class="loss-sep"></div>
       <div class="loss-col">
-        <div class="loss-lbl">You receive</div>
+        <div class="loss-lbl" data-i18n="res-receive-label">You receive</div>
         <div class="loss-receive" id="res-net-receive">—</div>
-        <div class="loss-note">in hand, right away</div>
+        <div class="loss-note" data-i18n="res-receive-note">in hand, right away</div>
       </div>
     </div>
 
     <!-- Loan comparison (shown after calculate) -->
     <div class="compare-card" id="compare-card" style="display:none">
-      <div class="compare-head">Chitty call vs Personal Loan</div>
+      <div class="compare-head" data-i18n="cmp-header">Chitty call vs Personal Loan</div>
       <div class="compare-body">
 
         <div class="compare-col" id="cmp-chitty-col">
-          <div class="compare-option">Call Chitty</div>
+          <div class="compare-option" data-i18n="cmp-chitty-option">Call Chitty</div>
           <div class="compare-row-item">
-            <span class="cmp-lbl">You receive</span>
+            <span class="cmp-lbl" data-i18n="cmp-lbl-receive">You receive</span>
             <span class="cmp-val" id="cmp-chitty-net">—</span>
           </div>
           <div class="compare-row-item">
-            <span class="cmp-lbl">One-time loss</span>
+            <span class="cmp-lbl" data-i18n="cmp-lbl-one-time">One-time loss</span>
             <span class="cmp-val highlight" id="cmp-chitty-cost">—</span>
           </div>
           <div class="compare-row-item">
-            <span class="cmp-lbl">Monthly outgo</span>
+            <span class="cmp-lbl" data-i18n="cmp-lbl-monthly-out">Monthly outgo</span>
             <span class="cmp-val" id="cmp-chitty-monthly">—</span>
           </div>
         </div>
 
-        <div class="compare-divider">vs</div>
+        <div class="compare-divider" data-i18n="cmp-vs">vs</div>
 
         <div class="compare-col" id="cmp-loan-col">
-          <div class="compare-option">Personal Loan</div>
+          <div class="compare-option" data-i18n="cmp-loan-option">Personal Loan</div>
           <div class="compare-row-item">
-            <span class="cmp-lbl">You receive</span>
+            <span class="cmp-lbl" data-i18n="cmp-lbl-receive">You receive</span>
             <span class="cmp-val" id="cmp-loan-net">—</span>
           </div>
           <div class="compare-row-item">
-            <span class="cmp-lbl">Interest rate</span>
+            <span class="cmp-lbl" data-i18n="cmp-lbl-rate">Interest rate</span>
             <span class="cmp-val">
               <input id="loan-rate" class="inline-edit" type="number" value="15.99" step="0.01" min="1" max="60" />
-              <span class="inline-unit">% / yr</span>
+              <span class="inline-unit" data-i18n="cmp-pct-yr">% / yr</span>
             </span>
           </div>
           <div class="compare-row-item">
-            <span class="cmp-lbl">Loan tenure</span>
+            <span class="cmp-lbl" data-i18n="cmp-lbl-tenure">Loan tenure</span>
             <span class="cmp-val" id="loan-tenure-auto" style="display:none; color:var(--accent); font-size:12px"></span>
             <span class="cmp-val" id="loan-tenure-manual">
               <input id="loan-months" class="inline-edit" type="number" value="60" step="1" min="1" max="360" />
-              <span class="inline-unit">months</span>
+              <span class="inline-unit" data-i18n="cmp-months-unit">months</span>
             </span>
           </div>
           <div class="compare-row-item">
-            <span class="cmp-lbl">Total interest</span>
+            <span class="cmp-lbl" data-i18n="cmp-lbl-interest">Total interest</span>
             <span class="cmp-val highlight" id="cmp-loan-interest">—</span>
           </div>
           <div class="compare-row-item">
-            <span class="cmp-lbl">Monthly EMI</span>
+            <span class="cmp-lbl" data-i18n="cmp-lbl-emi">Monthly EMI</span>
             <span class="cmp-val" id="cmp-loan-monthly">—</span>
           </div>
         </div>
@@ -425,13 +425,13 @@
 
     <!-- Zone strip -->
     <div class="zone-section" id="zone-section" style="display:none">
-      <div class="zone-section-title">When to call — quick guide</div>
+      <div class="zone-section-title" data-i18n="zone-section-title">When to call — quick guide</div>
       <div class="zone-strip" id="zone-strip"></div>
     </div>
 
     <!-- Share -->
     <div class="share-row">
-      <button class="wa-btn" id="share-btn" style="display:none">📤 Share on WhatsApp</button>
+      <button class="wa-btn" id="share-btn" data-i18n="share-btn" style="display:none">📤 Share on WhatsApp</button>
       <p class="fn" data-i18n="footnote">Note: KSFE deducts 5% commission from each winner. Dividend you receive may be taxable.</p>
     </div>
 
@@ -465,7 +465,7 @@
 <section class="seo-content" aria-label="About this calculator">
   <div class="seo-inner">
     <button class="seo-toggle" aria-expanded="false" aria-controls="seo-details">
-      <span>About this calculator</span>
+      <span data-i18n="seo-toggle-label">About this calculator</span>
       <svg class="seo-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
         <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>

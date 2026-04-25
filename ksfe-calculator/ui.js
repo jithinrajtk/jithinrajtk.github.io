@@ -152,12 +152,12 @@ function updateLoanComparison(basics, state, inp) {
   // Chitty column
   document.getElementById('cmp-chitty-net').textContent     = KSFE.fmt(netReceived);
   document.getElementById('cmp-chitty-cost').textContent    = KSFE.fmt(chittyBidCost);
-  document.getElementById('cmp-chitty-monthly').textContent = KSFE.fmt(basics.installment) + ' / mo';
+  document.getElementById('cmp-chitty-monthly').textContent = KSFE.fmt(basics.installment) + ' ' + t('res-mo-suffix', '/ mo');
 
   // Loan column
   document.getElementById('cmp-loan-net').textContent      = KSFE.fmt(netReceived);
   document.getElementById('cmp-loan-interest').textContent = KSFE.fmt(loan.totalInterest);
-  document.getElementById('cmp-loan-monthly').textContent  = KSFE.fmt(loan.emi) + ' / mo';
+  document.getElementById('cmp-loan-monthly').textContent  = KSFE.fmt(loan.emi) + ' ' + t('res-mo-suffix', '/ mo');
 
   var card    = document.getElementById('compare-card');
   var verdict = document.getElementById('compare-verdict');
@@ -219,7 +219,7 @@ function calculate(inp) {
   clearErrors();
 
   if (inp.luckyPerMonth >= inp.winnersPerMonth) {
-    showError('err-lucky', 'Lucky winners must be fewer than total winners per month.');
+    showError('err-lucky', t('err-lucky-count', 'Lucky winners must be fewer than total winners per month.'));
     return;
   }
 
@@ -230,7 +230,8 @@ function calculate(inp) {
   if (!inp.lastPaid) return;
 
   if (inp.lastPaid >= basics.installment) {
-    showError('err-sms', 'SMS amount (₹' + inp.lastPaid + ') can\'t be more than your monthly installment (₹' + basics.installment + ').');
+    showError('err-sms', t('err-sms-high', 'SMS amount (₹{sms}) can\'t exceed your monthly installment (₹{inst}).')
+      .replace('{sms}', inp.lastPaid).replace('{inst}', basics.installment));
     return;
   }
 
@@ -339,7 +340,7 @@ function calculate(inp) {
   var chittyBidCost = state.avgCallLoss + basics.ksfeCommission;
   var netReceived   = inp.chitAmount - chittyBidCost;
   document.getElementById('loss-box').style.display = 'flex';
-  document.getElementById('res-call-loss').textContent    = KSFE.fmt(chittyBidCost) + ' loss';
+  document.getElementById('res-call-loss').textContent    = KSFE.fmt(chittyBidCost) + ' ' + t('res-loss-suffix', 'loss');
   document.getElementById('res-net-receive').textContent  = KSFE.fmt(netReceived);
 
   // Hidden compat spans
@@ -400,26 +401,26 @@ function calculate(inp) {
   var zoneDefs = [
     {
       range:    KSFE.fmt(rows[2].payment) + ' – ' + KSFE.fmt(rows[0].payment),
-      label:    'Best time — low competition',
-      badge:    'Call now ✓', badgeCls: 'green', dot: '#16a34a',
+      label:    t('zone-best-label', 'Best time — low competition'),
+      badge:    t('zone-best-badge', 'Call now ✓'), badgeCls: 'green', dot: '#16a34a',
       current:  state.lossPercent <= 10,
     },
     {
       range:    KSFE.fmt(rows[3].payment) + ' – ' + KSFE.fmt(rows[2].payment),
-      label:    'Okay — moderate competition',
-      badge:    'Acceptable', badgeCls: 'amber', dot: '#f59e0b',
+      label:    t('zone-ok-label', 'Okay — moderate competition'),
+      badge:    t('zone-ok-badge', 'Acceptable'), badgeCls: 'amber', dot: '#f59e0b',
       current:  state.lossPercent > 10 && state.lossPercent <= 15,
     },
     {
       range:    KSFE.fmt(rows[5].payment) + ' – ' + KSFE.fmt(rows[3].payment),
-      label:    'Too competitive — better to wait',
-      badge:    'Wait', badgeCls: 'red', dot: '#dc2626',
+      label:    t('zone-wait-label', 'Too competitive — better to wait'),
+      badge:    t('zone-wait-badge', 'Wait'), badgeCls: 'red', dot: '#dc2626',
       current:  state.lossPercent > 15 && state.lossPercent <= 24,
     },
     {
-      range:    'Below ' + KSFE.fmt(rows[5].payment),
-      label:    'Very high competition — avoid calling',
-      badge:    "Don't call", badgeCls: 'red', dot: '#dc2626',
+      range:    t('zone-below', 'Below') + ' ' + KSFE.fmt(rows[5].payment),
+      label:    t('zone-avoid-label', 'Very high competition — avoid calling'),
+      badge:    t('zone-avoid-badge', "Don't call"), badgeCls: 'red', dot: '#dc2626',
       current:  state.lossPercent > 24,
     },
   ];
@@ -427,7 +428,7 @@ function calculate(inp) {
   zoneDefs.forEach(function(z) {
     var div = document.createElement('div');
     div.className = 'zone-row' + (z.current ? ' current' : '');
-    var rangeText = z.current ? z.range + ' ◀ You' : z.range;
+    var rangeText = z.current ? z.range + ' ' + t('zone-you', '◀ You') : z.range;
     div.innerHTML =
       '<div class="zone-dot" style="background:' + z.dot + '"></div>' +
       '<div class="zone-info">' +

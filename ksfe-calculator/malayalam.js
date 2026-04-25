@@ -145,9 +145,55 @@ window.ML = {
 
   'err-date-ended': 'ഈ ചിട്ടി കാലാവധി കഴിഞ്ഞതാണ് - തീയതിയും കാലാവധിയും പരിശോധിക്കുക.',
 
+  'err-lucky-count': '',    // Lucky winners must be fewer than total winners per month.
+
+  'err-sms-high': '',       // SMS amount (₹{sms}) can't exceed your monthly installment (₹{inst}).
+
   // ── Share & footer ────────────────────────────────────────────────────────
   'share-btn': 'WhatsApp-ൽ പങ്കുവെക്കാം',
 
   'footnote': 'ശ്രദ്ധിക്കുക: KSFE ഓരോ തവണയും 5% കമ്മീഷൻ കുറയ്ക്കും. നിങ്ങൾക്ക് ലഭിക്കുന്ന ഡിവിഡന്റ് (ലാഭവിഹിതം) നികുതിക്ക് വിധേയമാകാം.',
+
+  // ── Results: initial verdict ──────────────────────────────────────────────
+  'verdict-initial': '',    // Fill in your details to see results
+
+  // ── Results: loss box ─────────────────────────────────────────────────────
+  'res-loss-label':    '',  // If you call this month
+  'res-loss-upfront':  '',  // one-time, upfront
+  'res-receive-label': '',  // You receive
+  'res-receive-note':  '',  // in hand, right away
+  'res-loss-suffix':   '',  // loss
+  'res-mo-suffix':     '',  // / mo
+
+  // ── Results: comparison card ──────────────────────────────────────────────
+  'cmp-header':          '',  // Chitty call vs Personal Loan
+  'cmp-vs':              '',  // vs
+  'cmp-chitty-option':   '',  // Call Chitty
+  'cmp-loan-option':     '',  // Personal Loan
+  'cmp-lbl-receive':     '',  // You receive
+  'cmp-lbl-one-time':    '',  // One-time loss
+  'cmp-lbl-monthly-out': '',  // Monthly outgo
+  'cmp-lbl-rate':        '',  // Interest rate
+  'cmp-lbl-tenure':      '',  // Loan tenure
+  'cmp-lbl-interest':    '',  // Total interest
+  'cmp-lbl-emi':         '',  // Monthly EMI
+  'cmp-pct-yr':          '',  // % / yr
+  'cmp-months-unit':     '',  // months
+
+  // ── Results: zone strip ───────────────────────────────────────────────────
+  'zone-section-title': '',  // When to call — quick guide
+  'zone-you':           '',  // ◀ You
+  'zone-below':         '',  // Below
+  'zone-best-label':    '',  // Best time — low competition
+  'zone-ok-label':      '',  // Okay — moderate competition
+  'zone-wait-label':    '',  // Too competitive — better to wait
+  'zone-avoid-label':   '',  // Very high competition — avoid calling
+  'zone-best-badge':    '',  // Call now ✓
+  'zone-ok-badge':      '',  // Acceptable
+  'zone-wait-badge':    '',  // Wait
+  'zone-avoid-badge':   '',  // Don't call
+
+  // ── SEO section toggle ────────────────────────────────────────────────────
+  'seo-toggle-label': '',    // About this calculator
 
 };
