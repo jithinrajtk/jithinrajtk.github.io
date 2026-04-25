@@ -50,21 +50,30 @@ The comment section also finished with roughly 3.4 times more comments than we n
 
 A few months later we ran it on a reel built around a giveaway. Entri had teamed up with Google for an event and the post was offering followers a chance to win Google-branded merchandise. The keyword was FREE.
 
-![Entri reel offering Google swag kit — 1.3 million views](/assets/images/comment-automation-entri-reel.jpeg)
+<figure class="screenshot">
+  <img src="/assets/images/comment-automation-entri-reel.jpeg" alt="Entri Instagram reel offering Google swag kit, showing 1.3 million views">
+  <figcaption>1.3M views. No paid boost.</figcaption>
+</figure>
 
-1.3 million views. The post pulled people in on its own — we did not boost it.
+The post pulled people in on its own — we did not boost it.
 
 FREE is a single generic word and I know what I said earlier about single keywords. But it was not incidental here. Every person watching that reel was watching because they wanted the free kit. The word was the entire point of showing up in the comments.
 
 I remember refreshing the comment count at some point during the day and just stopping. It kept moving faster than I expected.
 
-![Comment section flooding with people typing FREE, Free, Frre to trigger the automation](/assets/images/comment-automation-free-comments.jpeg)
+<figure class="screenshot">
+  <img src="/assets/images/comment-automation-free-comments.jpeg" alt="Instagram comment section showing hundreds of people typing FREE to trigger the automation">
+  <figcaption>The comment section the afternoon it went live.</figcaption>
+</figure>
 
 Hundreds of people typing FREE, Free, free. One person typed Frre and still got the DM — ManyChat catches close matches. The automation was firing continuously.
 
 Then I checked the full stats the next morning.
 
-![Reel stats showing 135K comments, 32.8K likes, 39.1K shares, 8,198 saves on the entri.coding account](/assets/images/comment-automation-135k-stats.jpeg)
+<figure class="screenshot">
+  <img src="/assets/images/comment-automation-135k-stats.jpeg" alt="Instagram reel stats: 135K comments, 32.8K likes, 39.1K shares, 8,198 saves on entri.coding">
+  <figcaption>The stats the next morning.</figcaption>
+</figure>
 
 135,000 comments. 32,800 likes. 39,100 shares. 8,198 saves. We picked up 20,000 followers that week.
 
