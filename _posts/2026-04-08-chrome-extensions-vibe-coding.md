@@ -4,10 +4,10 @@ title: "If I Can See It on the Screen, I Can Get It Out"
 subtitle: "Chrome extensions became my secret weapon. Vibe coding made them something I build in an afternoon."
 date: 2026-04-08
 tags: [vibe-coding, chrome-extension, automation, browser-automation, claude-code, cursor, productivity, internal-tools, web-scraping, data-extraction]
-description: "How I build custom Chrome extensions using vibe coding tools like Claude Code and Cursor — pulling data from dashboards, automating forms, and replacing manual workflows. No API needed. No coding experience required."
+description: "How to build a Chrome extension without coding using vibe coding tools like Claude Code and Cursor — pulling data from dashboards that have no API, automating browser tasks, and replacing manual workflows. Built by a social media manager, not a developer."
 image: /assets/images/chrome-extension-vibe-coding.png
-seo_title: "How to Build a Chrome Extension Without Coding (Vibe Coding with Claude Code)"
-keywords: [build chrome extension without coding, vibe coding chrome extension, chrome extension no code, extract data from dashboard no API, automate browser tasks, Claude Code chrome extension, Cursor chrome extension]
+seo_title: "How to Build a Chrome Extension Without Coding (Vibe Coding for Non-Developers)"
+keywords: [build chrome extension without coding, vibe coding chrome extension, chrome extension no code, extract data from dashboard no API, automate browser tasks, Claude Code chrome extension, vibe coding for non-developers, vibe coding for social media managers, chrome extension vibe coding tutorial]
 permalink: /writing/build-chrome-extension-without-coding/
 last_modified_at: 2026-04-09
 ---

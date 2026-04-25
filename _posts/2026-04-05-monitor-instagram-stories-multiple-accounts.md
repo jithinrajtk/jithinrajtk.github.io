@@ -4,9 +4,10 @@ title: "I Was \"Monitoring\" 25+ Instagram Pages. I Was Just Wasting Time."
 subtitle: "How I built an Instagram story monitoring dashboard with spacing alerts and automated hourly email reports using Claude Code. No engineers involved."
 date: 2026-04-05
 tags: [instagram, automation, claude-code, social-media, internal-tools, content-operations, instagram-monitoring, story-tracking, multiple-pages, social-media-dashboard]
-description: "How to monitor Instagram stories across 25+ pages without opening the app — a custom dashboard with story spacing violation alerts, per-page tracking, and automated hourly email reports. Built with Claude Code without an engineering team."
+description: "How to monitor Instagram stories across multiple accounts without opening the app — a custom Instagram story monitoring dashboard with spacing violation alerts, per-page tracking, and automated hourly email reports. Built for social media operations without an engineering team."
 image: /assets/images/storydash-overview.png
-seo_title: "How to Monitor Instagram Stories Across Multiple Accounts (Dashboard + Email Alerts)"
+seo_title: "How to Monitor Instagram Stories Across Multiple Accounts (No App, No Engineers)"
+keywords: [how to monitor Instagram stories multiple accounts, Instagram story monitoring dashboard, monitor multiple Instagram pages, Instagram story monitoring tool, social media operations automation, Instagram story spacing alert, automated Instagram story reports, Instagram monitoring without opening app]
 last_modified_at: 2026-04-08
 redirect_from:
   - /writing/storydash-monitoring-instagram-pages/

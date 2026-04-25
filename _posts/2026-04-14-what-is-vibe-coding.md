@@ -5,9 +5,9 @@ subtitle: "What vibe coding means when you run operations, not engineering. And 
 date: 2026-04-14
 last_modified_at: 2026-04-15
 tags: [vibe-coding, automation, claude-code, cursor, internal-tools, productivity, social-media, operations, no-code]
-description: "Vibe coding without a developer background — how I went from manually copying Google Sheets in 2022 to shipping production tools with Claude Code and Cursor."
-seo_title: "What is Vibe Coding? A Non-Developer's Honest Answer"
-keywords: [vibe coding, what is vibe coding, vibe coding for non-developers, vibe coding examples, Claude Code vibe coding, build tools without coding, vibe coding meaning]
+description: "What vibe coding actually means for non-developers and social media managers — how I went from manually copying Google Sheets in 2022 to shipping production tools with Claude Code and Cursor. No engineering background required."
+seo_title: "What is Vibe Coding? A Non-Developer & Social Media Manager's Honest Answer"
+keywords: [vibe coding for non-developers, vibe coding for social media managers, what is vibe coding, vibe coding meaning, vibe coding examples real world, vibe coding operations, build tools without coding background, Claude Code vibe coding, non-developer building production tools]
 permalink: /writing/what-is-vibe-coding/
 ---
 

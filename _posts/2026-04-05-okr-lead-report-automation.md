@@ -4,11 +4,11 @@ title: "Every Morning, the Report Already Knows What Needs Fixing"
 subtitle: "How I built an automated lead performance report that replaced manual pre-meeting calculation with an email that arrives before anyone opens a laptop."
 date: 2026-04-05
 last_modified_at: 2026-04-14
-tags: [automation, okr, internal-tools, claude-code, data, social-media, lead-generation, reporting-automation, daily-report, performance-tracking]
-description: "How to automate a daily lead generation performance report — pulling OKR data, calculating run rates, ranking categories by urgency, and delivering a briefing email before the first meeting. Built without a data or engineering team."
-seo_title: "How to Automate a Daily Lead Performance Report (No Data Team Needed)"
+tags: [automation, okr, internal-tools, claude-code, data, social-media, lead-generation, reporting-automation, daily-report, performance-tracking, social-media-operations]
+description: "How to automate a daily lead performance report for social media operations — pulling OKR data, calculating run rates, ranking by urgency, and delivering a briefing email before the first meeting. Built without a data or engineering team."
+seo_title: "How to Automate a Daily Lead Performance Report for Social Media Operations"
 image: /assets/images/okr-email-header.png
-keywords: [automate daily lead report, OKR reporting automation, lead performance report, automated sales report, daily OKR status email, lead run rate tracking, reporting without data team]
+keywords: [automate daily lead report, OKR reporting automation, lead performance report, automated sales report, daily OKR status email, lead run rate tracking, reporting without data team, social media operations automation, automate morning report social media, automated lead report email]
 permalink: /writing/automate-daily-lead-performance-report/
 ---
 
