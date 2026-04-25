@@ -58,6 +58,36 @@ We had set this up for the DM side. The reach increase was not in the plan.
 
 ---
 
+## Then we ran it on something that actually scaled
+
+The content calendar reel was a small test. The numbers were encouraging but contained. Then we ran it on a reel that was built specifically around giving something away.
+
+The reel was about winning Google's swag kit. The brand had teamed up with Google for an event, and the post was offering followers a chance to get Google-branded merchandise. The caption told people to comment FREE to enter and get the details sent to their DMs.
+
+![Entri reel about Google swag kit giveaway, 1.3 million views](/assets/images/comment-automation-entri-reel.jpeg)
+
+1.3 million views. That is not a typo.
+
+The keyword was FREE. Single word, very generic. Exactly the kind of keyword I would usually advise against. But in this case every single person watching the video wanted the free kit, so the word was not incidental to natural conversation. It was the entire point.
+
+![Comment section showing hundreds of people typing FREE to trigger the automation](/assets/images/comment-automation-free-comments.jpeg)
+
+The comment section filled up with FREE within hours. People typing it out in full, in lowercase, one person typing Frre by mistake and probably not knowing why the DM still came. ManyChat's matching is forgiving enough to catch common typos when they are close enough to the keyword.
+
+![Instagram reel stats showing 135K comments, 32.8K likes, 39.1K shares, 8,198 saves](/assets/images/comment-automation-135k-stats.jpeg)
+
+135,000 comments. 32,800 likes. 39,100 shares. 8,198 saves.
+
+The account picked up 20,000 followers in that single week.
+
+Every person who commented FREE got a DM immediately with the giveaway details and the registration link. ManyChat sent tens of thousands of DMs without a single one going out late. No one had to sit there manually replying to comments. The team's job that week was to monitor the inbox and handle the conversations that came back, not to work the comment section.
+
+The post spread because the engagement was real, the volume was enormous, and the algorithm treated it accordingly. Comment automation did not make the post go viral. The reel did that. But it handled the 135,000 triggers without breaking and converted the attention into DMs that had a shot at becoming something.
+
+That is the actual ceiling of this tool when the content is right.
+
+---
+
 ## Where we got it wrong
 
 The keyword PLAN was too short and too common.
