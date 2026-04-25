@@ -885,7 +885,7 @@ body {
 /* ── SEO content section ─────────────────────────────────── */
 .seo-content {
   border-top: 1px solid var(--border2);
-  padding: 40px 24px 56px;
+  padding: 0 24px;
 }
 
 .seo-inner {
@@ -893,7 +893,46 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+}
+
+.seo-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  padding: 16px 0;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text3);
+  letter-spacing: 0.01em;
+  width: 100%;
+  text-align: left;
+}
+.seo-toggle:hover { color: var(--text2); }
+
+.seo-chevron {
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+  color: var(--text3);
+}
+.seo-toggle[aria-expanded="true"] .seo-chevron {
+  transform: rotate(180deg);
+}
+
+.seo-collapsible {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.seo-collapsible.is-open {
+  max-height: 800px;
+}
+
+.seo-inner .seo-intro,
+.seo-inner .seo-grid {
+  margin-bottom: 28px;
 }
 
 .seo-intro {
@@ -939,7 +978,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  .seo-content { padding: 32px 16px 44px; }
+  .seo-content { padding: 0 16px; }
   .seo-grid { grid-template-columns: 1fr; }
   .seo-block { border-right: none !important; }
   .seo-block:last-child { border-bottom: none; }

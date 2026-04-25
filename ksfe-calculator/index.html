@@ -464,23 +464,31 @@
 <!-- SEO content: static, crawlable by Googlebot even without JS -->
 <section class="seo-content" aria-label="About this calculator">
   <div class="seo-inner">
-    <p class="seo-intro">Free KSFE chitty calculator for Kerala members. Enter your SMS amount — get an instant answer on whether to call this month, your exact loss, and how it compares to a personal loan.</p>
-    <div class="seo-grid">
-      <div class="seo-block">
-        <span class="seo-label">SMS amount</span>
-        <p>The amount KSFE credits monthly equals your installment minus your share of the winning bid. A higher SMS amount means less competition — a better time to call.</p>
-      </div>
-      <div class="seo-block">
-        <span class="seo-label">Loss percentage</span>
-        <p>Your loss is the winning bid plus KSFE's 5% commission. Below 10% is excellent. Above 20% means high competition — better to wait for a quieter month.</p>
-      </div>
-      <div class="seo-block">
-        <span class="seo-label">Chitty vs personal loan</span>
-        <p>At low competition, calling a chitty is usually cheaper than a personal loan at 15–18% annual interest. The calculator shows both options side by side so you can decide.</p>
-      </div>
-      <div class="seo-block">
-        <span class="seo-label">Supported schemes</span>
-        <p>Works for any KSFE chitty from ₹1 lakh to ₹10 lakh, across durations of 20 to 60 months. Adjustable winners per month, lucky winners, and commission rate.</p>
+    <button class="seo-toggle" aria-expanded="false" aria-controls="seo-details">
+      <span>About this calculator</span>
+      <svg class="seo-chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+        <path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <div class="seo-collapsible" id="seo-details">
+      <p class="seo-intro">Free KSFE chitty calculator for Kerala members. Enter your SMS amount — get an instant answer on whether to call this month, your exact loss, and how it compares to a personal loan.</p>
+      <div class="seo-grid">
+        <div class="seo-block">
+          <span class="seo-label">SMS amount</span>
+          <p>The amount KSFE credits monthly equals your installment minus your share of the winning bid. A higher SMS amount means less competition — a better time to call.</p>
+        </div>
+        <div class="seo-block">
+          <span class="seo-label">Loss percentage</span>
+          <p>Your loss is the winning bid plus KSFE's 5% commission. Below 10% is excellent. Above 20% means high competition — better to wait for a quieter month.</p>
+        </div>
+        <div class="seo-block">
+          <span class="seo-label">Chitty vs personal loan</span>
+          <p>At low competition, calling a chitty is usually cheaper than a personal loan at 15–18% annual interest. The calculator shows both options side by side so you can decide.</p>
+        </div>
+        <div class="seo-block">
+          <span class="seo-label">Supported schemes</span>
+          <p>Works for any KSFE chitty from ₹1 lakh to ₹10 lakh, across durations of 20 to 60 months. Adjustable winners per month, lucky winners, and commission rate.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -495,6 +503,17 @@
       navigator.serviceWorker.register('/ksfe-calculator/sw.js');
     });
   }
+
+  (function() {
+    var btn = document.querySelector('.seo-toggle');
+    var panel = document.getElementById('seo-details');
+    if (!btn || !panel) return;
+    btn.addEventListener('click', function() {
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!open));
+      panel.classList.toggle('is-open', !open);
+    });
+  })();
 </script>
 </body>
 </html>
