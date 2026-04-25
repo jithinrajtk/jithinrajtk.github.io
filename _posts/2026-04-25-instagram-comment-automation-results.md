@@ -12,123 +12,111 @@ permalink: /writing/instagram-comment-automation-results/
 
 The first thing I noticed Monday morning was not the numbers.
 
-It was 60-something DM conversations sitting unread, half of them from people who had clearly expected a response over the weekend. A few had followed up. One had already moved on.
+It was 60-something DM conversations sitting unread, half of them from people who had clearly expected a response over the weekend. A few had followed up. One had already moved on and left a slightly irritated reply.
 
-We had set up comment automation on a reel Friday evening and then not thought much about it. By Monday it had run itself into a mess we were not prepared for.
-
-That is where most posts about Instagram comment automation should start. Not at the setup screen.
+We had set up comment automation on a reel Friday evening and not thought much about it after that.
 
 ---
 
-## What Instagram comment automation actually is
+## What Instagram comment automation is
 
-Before the results, the quick version for anyone who has not used this yet.
+Instagram comment automation is when someone comments a specific word on your post and they instantly get a DM from you. You set the trigger keyword in a tool like ManyChat, write the DM, and it sends automatically through Meta's official API every time that word shows up in the comments.
 
-Instagram comment automation is when someone comments a specific word on your post and they instantly get a DM from you. You set the trigger keyword in a tool like ManyChat, write the DM copy, and it sends automatically through Meta's official API every time that word appears in the comments.
+So you post a reel, put "comment PLAN to get the full breakdown in your DMs" in the caption, and everyone who types that word gets the message without you doing anything.
 
-The typical use case: you post a reel, put "comment PLAN to get the full breakdown sent to your DMs" in the caption, and every person who types that word gets the DM without you doing anything.
-
-ManyChat is the most widely used tool for this. InstantDM and LinkDM do the same thing. All of them connect through Instagram's official API, which means using them does not put your account at risk. The tools that are actually risky are the ones that log directly into your account rather than connecting through the API.
+ManyChat is the most common tool for this. InstantDM and LinkDM do the same thing. All of them go through Instagram's official API, so your account is not at risk. The tools that are risky are the ones that log directly into your account rather than connecting via the API — avoid those.
 
 ---
 
-## The reel we ran it on first
+## The first time we tried it
 
-The post was a reel about planning a month of Instagram content without using a scheduling tool. Practical, specific, the kind of thing that gets saved rather than just liked. We had put effort into it and it was performing reasonably before we added the automation.
+The post was a reel about building a month of Instagram content without a scheduler. We put effort into it. It was performing okay organically before we added the automation.
 
-The keyword was PLAN. In the caption: comment PLAN and I will send you the full content calendar template we use.
+Keyword was PLAN. Caption said: comment PLAN and I will send you the content calendar template we actually use.
 
-We did not boost it. Organic reach only.
+No paid boost. Organic only.
 
-By the end of the first six hours, somewhere around 340 people had commented the keyword. Every one of them got the DM immediately.
+Somewhere around 340 people commented the keyword in the first six hours. Every one of them got the DM immediately.
 
-I had sent broadcast DMs before through similar tools. Cold or semi-warm audiences. Open rates sit around 30 to 40 percent on a good day. So when I checked the dashboard the next morning and the comment-triggered DMs were opening at 84 percent, I pulled the number again to make sure I was reading it right.
+I had sent broadcast DMs before through other tools. Cold lists, semi-warm audiences. Open rates land around 30 to 40 percent when things go well. So when the dashboard showed the comment-triggered DMs at 84 percent, I assumed I was reading the metric wrong. I was not.
 
-The difference is not the tool. It is the timing. Someone who commented sixty seconds ago is not a cold contact. They are as warm as a contact gets without having bought something from you.
+The reason is not complicated. Someone who commented on your post sixty seconds ago is not a cold contact. They just raised their hand. The DM lands when they are already thinking about you.
 
----
-
-## The comment section did something unexpected
-
-The reel finished with about 3.4 times more comments than our usual average for that content type.
-
-Part of that is the keyword CTA driving deliberate comments. But part of it is that people saw others commenting and did it too. The comment section looks active, which makes it look worth joining. The algorithm read the spike and pushed the reel to more accounts than it would have otherwise.
-
-We had set this up for the DM side. The reach increase was not in the plan.
+The comment section also finished with roughly 3.4 times more comments than we normally get on that kind of content. People saw others commenting and joined in. The algorithm read the activity spike and pushed the post further. We had set the automation up for the DM side. The extra reach came without us planning for it.
 
 ---
 
-## Then we ran it on something that actually scaled
+## Then we ran it on something much bigger
 
-The content calendar reel was a small test. The numbers were encouraging but contained. Then we ran it on a reel that was built specifically around giving something away.
+A few months later we ran comment automation on a completely different type of post. An Entri reel offering followers a chance to win Google's swag kit. Google-branded merchandise, a real giveaway, the kind of thing that does not need much convincing in the caption.
 
-The reel was about winning Google's swag kit. The brand had teamed up with Google for an event, and the post was offering followers a chance to get Google-branded merchandise. The caption told people to comment FREE to enter and get the details sent to their DMs.
+The keyword was FREE.
 
-![Entri reel about Google swag kit giveaway, 1.3 million views](/assets/images/comment-automation-entri-reel.jpeg)
+That is a single generic word and I know what I said earlier about single keywords. But FREE was not incidental here. Every person watching that reel was watching specifically because they wanted the free kit. The word was the whole point of the post.
 
-1.3 million views. That is not a typo.
+![Entri reel about winning Google's swag kit, showing 1.3 million views](/assets/images/comment-automation-entri-reel.jpeg)
 
-The keyword was FREE. Single word, very generic. Exactly the kind of keyword I would usually advise against. But in this case every single person watching the video wanted the free kit, so the word was not incidental to natural conversation. It was the entire point.
+1.3 million views.
 
-![Comment section showing hundreds of people typing FREE to trigger the automation](/assets/images/comment-automation-free-comments.jpeg)
+The comment section went immediately. People typing FREE, Free, free, and one person who typed Frre and still got the DM because ManyChat catches close enough matches.
 
-The comment section filled up with FREE within hours. People typing it out in full, in lowercase, one person typing Frre by mistake and probably not knowing why the DM still came. ManyChat's matching is forgiving enough to catch common typos when they are close enough to the keyword.
+![Comment section showing people typing FREE to trigger the automation](/assets/images/comment-automation-free-comments.jpeg)
 
-![Instagram reel stats showing 135K comments, 32.8K likes, 39.1K shares, 8,198 saves](/assets/images/comment-automation-135k-stats.jpeg)
+I remember refreshing the comments count at some point and just stopping. The number kept moving.
+
+![Reel stats: 135K comments, 32.8K likes, 39.1K shares, 8,198 saves](/assets/images/comment-automation-135k-stats.jpeg)
 
 135,000 comments. 32,800 likes. 39,100 shares. 8,198 saves.
 
-The account picked up 20,000 followers in that single week.
+We picked up 20,000 followers that week.
 
-Every person who commented FREE got a DM immediately with the giveaway details and the registration link. ManyChat sent tens of thousands of DMs without a single one going out late. No one had to sit there manually replying to comments. The team's job that week was to monitor the inbox and handle the conversations that came back, not to work the comment section.
+Every person who commented FREE got a DM with the giveaway details and the registration link, automatically, the moment they commented. ManyChat handled tens of thousands of triggers without anything breaking. Nobody on the team was manually responding to comments. The only job was watching the inbox for replies, which — more on that in a second — we also underestimated badly.
 
-The post spread because the engagement was real, the volume was enormous, and the algorithm treated it accordingly. Comment automation did not make the post go viral. The reel did that. But it handled the 135,000 triggers without breaking and converted the attention into DMs that had a shot at becoming something.
-
-That is the actual ceiling of this tool when the content is right.
+I want to be honest about something: the reel going viral had nothing to do with the automation. The content did that. The automation's job was to not collapse under the volume, and to turn the attention into actual DM conversations before people scrolled on. It did both.
 
 ---
 
-## Where we got it wrong
+## The keyword mistake on a different post
 
-The keyword PLAN was too short and too common.
+Back to the content calendar reel.
 
-Someone commented "this is literally the plan I needed, thank you" and the automation fired. They got a DM offering them a content calendar template in response to what was just a compliment. They were confused. We apologised and explained. It was recoverable, but it looked sloppy.
+PLAN was the wrong choice. Someone commented "this is literally the plan I needed, thank you" and the automation fired. They got a DM offering them a content calendar template in response to what was just a nice comment. They replied asking what the message was about. We apologised and explained. Not a disaster, but embarrassing.
 
-We switched to a two-word phrase for the next post. False triggers dropped completely.
+We moved to a two-word phrase after that. The false triggers stopped.
 
-One word keywords feel easier to ask people to type. In practice they create this problem often enough that it is not worth it.
-
----
-
-## The DM sequence that killed completions
-
-The second post we ran used a three-message flow. First DM delivered the promised resource. Second DM asked them to confirm they had received it. Third DM offered a follow-up piece of content.
-
-Most people stopped after the first one.
-
-Not because they were not interested. Because three messages in a row from an account they had just discovered felt like being added to a mailing list rather than getting something useful. We cut it to one DM with one link. The people who engaged after that were more intentional about it.
+Single word keywords feel easier in the caption. In practice, one sentence from a friendly commenter can trigger the whole flow for someone who was not expecting it.
 
 ---
 
-## The inbox problem nobody mentions
+## The DM sequence that lost people
 
-Back to that Monday morning.
+On the second post we ran a three-step DM flow. First message delivered the resource. Second asked them to confirm they got it. Third offered something else.
 
-When someone gets an automated DM, a portion of them reply. Not a small portion either. In our case it was close to a third of the people who opened the DM. Questions about the template, questions about our setup, a few asking if we offered consulting.
+Most people did not get past the first message.
 
-Those replies land in the inbox like any other DM. They need a human response. And if you have run automation across multiple posts at the same time, or over a weekend when nobody is watching, they stack up.
-
-The setup guides explain how to trigger the DM. None of them mention that you need to roster someone to the inbox for the days after a post goes live with this running. We did not, and the conversations that mattered most went cold because of it.
+Three DMs in a row from a page they had just discovered felt like being subscribed to something. We trimmed it to one message with one link. The people who engaged after that were actually interested, not just politely going along with the flow.
 
 ---
 
-## What actually changed in our workflow
+## The inbox situation
 
-We kept using it. The DM open rates are real enough to justify the effort, and once we fixed the keyword and the DM copy, the false trigger problem went away.
+Back to that Monday morning I mentioned at the start.
 
-What changed was the roster. Someone is now assigned inbox cover the day a comment automation post goes live and for the two days after. Not full-time monitoring, just a daily check. Most conversations are simple. A few are not and those are worth being there for.
+About a third of the people who opened the DM replied. Questions about the template, questions about how we built the setup, a few asking if we did any kind of consulting work. Good conversations, genuinely. But they all landed in the inbox as regular DMs, and they all needed someone to actually reply.
 
-The automation handles the volume. The person handles the conversation.
+We had not assigned anyone to watch the inbox over the weekend. By Monday we had 60-plus open threads. Some were still active. A few were not anymore.
+
+I am not sure what we lost. That is the honest answer. We do not know how many of those conversations would have gone somewhere if we had been there on Saturday. That bothers me more than any metric.
+
+---
+
+## What is different now
+
+We still use it. The open rates alone make it worth the setup time, and the Google reel proved it can handle volume we never expected.
+
+What changed is simpler than any process document would make it sound. Someone is on the inbox the day a comment automation post goes live. Not sitting watching it. Just checking it morning and evening for the next two days. Most of what comes in is easy. A few threads every run are worth being present for.
+
+The volume is the automation's job. The conversation is still ours.
 
 ---
 
