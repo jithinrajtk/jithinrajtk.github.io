@@ -48,7 +48,7 @@ The comment section also finished with roughly 3.4 times more comments than we n
 
 ## Then we ran it on something much bigger
 
-A few months later we ran it on a reel built around a giveaway. Entri had teamed up with Google for an event and the post was offering followers a chance to win Google-branded merchandise. The keyword was FREE.
+A few months later, we tested it on a giveaway reel themed around Google's Free Kit, offering followers a chance to win Google-branded merchandise. The keyword was FREE.
 
 <figure class="screenshot">
   <img src="/assets/images/comment-automation-entri-reel.jpeg" alt="Entri Instagram reel offering Google swag kit, showing 1.3 million views">
